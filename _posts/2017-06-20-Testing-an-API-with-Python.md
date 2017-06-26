@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Functional testing an API
+title: Testing an API with Python
 categories: [API, testing]
 tags: [API]
 ---
