@@ -6,12 +6,10 @@ tags: [automation]
 ---
 
 #### Why do I need to work with Ansible on Windows?
-I need to run some tests against about 10 or so supported windows versions. I can either have these machines built (manually) once via ESXi or something like that and then take snapshots, do my tests and revert to the snapshots. Or I can create automation around spinning up these VM's and not worry about manually setting up these VM's ever. The latter approach is the subject of this post. I hope you find it useful.
-
 I'll need to run some tests against a bunch of different windows machines, one each for every supported version. I looked into Ansible for setting up the boxes instead of setting up each box by hand. This blog documents what I learn as I go through this process. Let me know what you think!
 
 #### Tools we're going to use
-The tools we are going to use to acheive this objective are [Vagrant](https://www.vagrantup.com/) and [Ansible](http://docs.ansible.com/)
+The tools we are going to use to get this done are [Vagrant](https://www.vagrantup.com/) and [Ansible](http://docs.ansible.com/)
 
 ##### Vagrant
 Vagrant provides the same, easy workflow regardless of your role as a developer, operator, or designer. It leverages a declarative configuration file which describes all your software requirements, packages, operating system configuration, users, and more.  Read more at [Vagrant](https://www.vagrantup.com/).
@@ -78,7 +76,8 @@ sudo apt-get install python-pip
 sudo apt-get install libssl-dev
 ```
 
-Install the python dependencies via the below,
+Install the python dependencies via the below. You first put all the dependencies into a file called 'requirements.txt' and then use that file with pip install -r to get all the requirements installed.
+
 ```
 cat <<END > requirements.txt
 ansible==2.4.0
@@ -114,6 +113,9 @@ pip install -r requirements.txt
 ```
 
 ##### Create files and directories per below
+
+You typically create a directory, thats named after your project, 'ansiblecode' in this case, to contain your files. The inventory.yml contains the list of hosts that you need to run ansible actions on. The ansible.cfg file is the config file that tells ansible where to find the inventory file. You create a group_vars directory, that contains detailed definitions of the group or hosts you are trying to work with.
+
 ```
 vagrant@ansible:~$ cat ansiblecode/
 ansible.cfg    group_vars/    inventory.yml
