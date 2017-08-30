@@ -5,8 +5,8 @@ categories: [automation]
 tags: [automation]
 ---
 
-#### Why do I need to work with Ansible on Windows?
-I'll need to run some tests against a bunch of different windows machines, one each for every supported version. I looked into Ansible for setting up the boxes instead of setting up each box by hand. This blog documents what I learn as I go through this process. Let me know what you think!
+#### What is the problem we're trying to solve?
+I have around 10 different supported Windows versions. I'll need to run some tests against each of them. I looked into Ansible for setting up the boxes instead of setting up each box by hand. This blog documents what I learn as I go through this process. Let me know what you think!
 
 #### Tools we're going to use
 The tools we are going to use to get this done are [Vagrant](https://www.vagrantup.com/) and [Ansible](http://docs.ansible.com/)
@@ -155,4 +155,20 @@ win2012r2 | SUCCESS => {
     "failed": false,
     "ping": "pong"
 }
+```
+
+##### Extending this into playbooks
+Because most of the stuff we do, most of the setup that is needed, is
+not really one off. We need a series of steps. Here's a sample playbook
+that helps start off down that path.
+
+```
+vagrant@ansible:~/ansiblecode$ cat playbook.yml
+- name: This is a simple test playbook
+  hosts: all
+  tasks:
+    - name: run ipconfig
+      raw: ipconfig
+      register: ipconfig
+    - debug: var=ipconfig
 ```
