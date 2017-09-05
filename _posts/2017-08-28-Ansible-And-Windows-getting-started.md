@@ -128,13 +128,15 @@ vagrant@ansible:~$ cat ansiblecode/ansible.cfg
 [defaults]
 inventory = /home/vagrant/ansibletesting/inventory.yml
 
-vagrant@ansible:~$ cat ansiblecode/group_vars/windows.yml
+vagrant@ansible:~/ansiblecode$ cat group_vars/windows.yml
 ansible_user: vagrant
 ansible_password: vagrant
 ansible_port: 5985
 ansible_connection: winrm
 ansible_winrm_scheme: http
 ansible_winrm_server_cert_validation: ignore
+ansible_become: false
+
 ```
 
 ##### Prep the Windows box
@@ -171,4 +173,20 @@ vagrant@ansible:~/ansiblecode$ cat playbook.yml
       raw: ipconfig
       register: ipconfig
     - debug: var=ipconfig
+```
+
+##### Common errors
+This is an error that I kept getting until I added `ansible_become: false` to my group_vars/windows.yml file.
+
+```
+vagrant@ansible:~/ansiblecode$ ansible-playbook -s playbook.yml
+
+PLAY [test raw module] *****************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************
+fatal: [win2012r2]: FAILED! => {"failed": true, "msg": "Internal Error: this connection module does not support running commands via sudo"}
+        to retry, use: --limit @/home/vagrant/ansiblecode/playbook.retry
+
+PLAY RECAP *****************************************************************************************************************************
+win2012r2                  : ok=0    changed=0    unreachable=0    failed=1
 ```
