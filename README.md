@@ -5,13 +5,14 @@
 * sudo gem install jekyll bundler
 * vim Gemfile and add the below lines to it
 
-"""
+```
 source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
-"""
+```
 
 * gem install bundler
 * bundle install
 * bundle exec jekyll serve
 =======
-For all things QA
+
+## For all things QA
