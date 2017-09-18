@@ -137,6 +137,15 @@ ansible_winrm_scheme: http
 ansible_winrm_server_cert_validation: ignore
 ansible_become: false
 
+Add the windows machines you want to work with to your hosts file
+vagrant@ansible:~/ansible_code$ cat /etc/hosts
+127.0.0.1       ansible ansible
+127.0.0.1       localhost
+127.0.1.1       vagrant
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+192.168.2.6     win2012r2
 ```
 
 ##### Prep the Windows box
@@ -147,6 +156,7 @@ Open up the Firewall settings
 
 Open the properties window and set incoming to "Allow"
 ![placeholder](/assets/images/firewall_properties.png)
+
 
 ##### Test run!
 Lets try and see if we can run a sample command on the windows box. I'm going to go with the win__ping command.
