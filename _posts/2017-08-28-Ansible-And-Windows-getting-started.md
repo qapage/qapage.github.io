@@ -247,6 +247,51 @@ win2012r2                  : ok=3    changed=1    unreachable=0    failed=0
 vagrant@ansible:~/ansible_code$
 ```
 
+An example of ansible playbook that prints hostname, downloads a couple of files from the internet.
+```
+- name: Hostname playbook
+  hosts: all
+  tasks:
+    - name: hostname
+      raw: hostname
+    - name: get pip
+      script: get-pip.py
+    - name: Download python.msi
+      win_get_url:
+        url: https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64.msi
+        dest: C:\Users\vagrant\python-2.7.14.amd64.msi
+    - name: Download get-pip.py
+      win_get_url:
+        url: https://bootstrap.pypa.io/get-pip.py
+        dest: C:\Users\vagrant\get-pip.py
+```
+The output of the above playbook looks like this,
+```
+vagrant@ansible:~/ansible_code$ ansible-playbook -s copier.yml
+
+PLAY [Hostname playbook] 
+
+TASK [Gathering Facts] 
+ok: [win2012r2]
+
+TASK [hostname] 
+changed: [win2012r2]
+
+TASK [get pip] 
+changed: [win2012r2]
+
+TASK [Download python.msi] 
+changed: [win2012r2]
+
+TASK [Download get-pip.py] 
+changed: [win2012r2]
+
+PLAY RECAP 
+win2012r2                  : ok=5    changed=4    unreachable=0    failed=0
+
+vagrant@ansible:~/ansible_code$
+```
+
 ##### Common errors
 This is an error you'll see unless you add your windows machine's name
 and IP to the ansible machine's hosts file.
