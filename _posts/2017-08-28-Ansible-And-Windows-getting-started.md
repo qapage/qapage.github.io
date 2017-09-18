@@ -185,6 +185,68 @@ vagrant@ansible:~/ansiblecode$ cat playbook.yml
     - debug: var=ipconfig
 ```
 
+Then you run the playbook as expect to see output like this,
+```
+vagrant@ansible:~/ansible_code$ ansible-playbook -s playbook.yml
+
+PLAY [This is a simple test playbook] 
+
+TASK [Gathering Facts] 
+ok: [win2012r2]
+
+TASK [run ipconfig] 
+changed: [win2012r2]
+
+TASK [debug] 
+ok: [win2012r2] => {
+    "ipconfig": {
+        "changed": true,
+        "rc": 0,
+        "stderr": "",
+        "stdout": "\r\nWindows IP Configuration\r\n\r\n\r\nEthernet adapter Ethernet 2:\r\n\r\n   Connection-specific DNS Suffix  . : \r\n   Link-local IPv6 Address . . . . . : fe80::940e:854c:d30:ce8b%16\r\n   IPv4 Address. . . . . . . . . . . : 192.168.2.6\r\n   Subnet
+Mask . . . . . . . . . . . : 255.255.255.0\r\n   Default Gateway . . . . . . . . . : \r\n\r\nEthernet adapter Ethernet:\r\n\r\n   Connection-specific DNS Suffix  . : \r\n   Link-local IPv6 Address . . . . . : fe80::f9f4:33db:8703:4244%12\r\n   IPv4 Address. . . . . . . .
+. . . : 10.0.2.15\r\n   Subnet Mask . . . . . . . . . . . : 255.255.255.0\r\n   Default Gateway . . . . . . . . . : 10.0.2.2\r\n\r\nTunnel adapter isatap.{380551EF-D345-4EA8-8323-39058D784E6D}:\r\n\r\n   Media State . . . . . . . . . . . : Media disconnected\r\n   Connect
+ion-specific DNS Suffix  . : \r\n\r\nTunnel adapter isatap.{5178F18B-3F30-4D9D-8495-67D2F44DD5B1}:\r\n\r\n   Media State . . . . . . . . . . . : Media disconnected\r\n   Connection-specific DNS Suffix  . : \r\n",
+        "stdout_lines": [
+            "",
+            "Windows IP Configuration",
+            "",
+            "",
+            "Ethernet adapter Ethernet 2:",
+            "",
+            "   Connection-specific DNS Suffix  . : ",
+            "   Link-local IPv6 Address . . . . . : fe80::940e:854c:d30:ce8b%16",
+            "   IPv4 Address. . . . . . . . . . . : 192.168.2.6",
+            "   Subnet Mask . . . . . . . . . . . : 255.255.255.0",
+            "   Default Gateway . . . . . . . . . : ",
+            "",
+            "Ethernet adapter Ethernet:",
+            "",
+            "   Connection-specific DNS Suffix  . : ",
+            "   Link-local IPv6 Address . . . . . : fe80::f9f4:33db:8703:4244%12",
+            "   IPv4 Address. . . . . . . . . . . : 10.0.2.15",
+            "   Subnet Mask . . . . . . . . . . . : 255.255.255.0",
+            "   Default Gateway . . . . . . . . . : 10.0.2.2",
+            "",
+            "Tunnel adapter isatap.{380551EF-D345-4EA8-8323-39058D784E6D}:",
+            "",
+            "   Media State . . . . . . . . . . . : Media disconnected",
+            "   Connection-specific DNS Suffix  . : ",
+            "",
+            "Tunnel adapter isatap.{5178F18B-3F30-4D9D-8495-67D2F44DD5B1}:",
+            "",
+            "   Media State . . . . . . . . . . . : Media disconnected",
+            "   Connection-specific DNS Suffix  . : "
+        ]
+    }
+}
+
+PLAY RECAP 
+win2012r2                  : ok=3    changed=1    unreachable=0    failed=0
+
+vagrant@ansible:~/ansible_code$
+```
+
 ##### Common errors
 This is an error you'll see unless you add your windows machine's name
 and IP to the ansible machine's hosts file.
@@ -208,13 +270,13 @@ This is an error that I kept getting until I added `ansible_become: false` to my
 ```
 vagrant@ansible:~/ansiblecode$ ansible-playbook -s playbook.yml
 
-PLAY [test raw module] *****************************************************************************************************************
+PLAY [test raw module] 
 
-TASK [Gathering Facts] *****************************************************************************************************************
+TASK [Gathering Facts] 
 fatal: [win2012r2]: FAILED! => {"failed": true, "msg": "Internal Error: this connection module does not support running commands via sudo"}
         to retry, use: --limit @/home/vagrant/ansiblecode/playbook.retry
 
-PLAY RECAP *****************************************************************************************************************************
+PLAY RECAP 
 win2012r2                  : ok=0    changed=0    unreachable=0    failed=1
 ```
 
