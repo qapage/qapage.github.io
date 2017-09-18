@@ -23,9 +23,9 @@ The step by step instructions are as listed below, at the end of which you will 
 ##### Create a Vagrantfile with the below contents,
 
 ```
-# -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# -*- mode: ruby -*-
 Vagrant.configure(2) do |config|
 end
 
@@ -80,7 +80,7 @@ Install the python dependencies via the below. You first put all the dependencie
 
 ```
 cat <<END > requirements.txt
-ansible==2.4.0
+ansible
 asn1crypto==0.22.0
 bcrypt==3.1.3
 certifi==2017.7.27.1
