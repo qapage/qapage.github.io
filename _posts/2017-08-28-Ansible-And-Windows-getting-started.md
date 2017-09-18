@@ -186,6 +186,23 @@ vagrant@ansible:~/ansiblecode$ cat playbook.yml
 ```
 
 ##### Common errors
+This is an error you'll see unless you add your windows machine's name
+and IP to the ansible machine's hosts file.
+
+```
+ansible:~/ansible_code$ ansible windows -m win_ping
+win2012r2 | UNREACHABLE! => {
+    "changed": false,
+        "msg": "plaintext: HTTPConnectionPool(host='win2012r2',
+        port=5985): Max retries exceeded with url: /wsman (Caused by
+        NewConnectionError('<urllib3.connection.HTTPConnection object at
+        0x7
+        f19bbb23e50>: Failed to establish a new connection: [Errno -2]
+        Name or service not known',))",
+            "unreachable": true
+            }
+```
+
 This is an error that I kept getting until I added `ansible_become: false` to my group_vars/windows.yml file.
 
 ```
@@ -200,3 +217,4 @@ fatal: [win2012r2]: FAILED! => {"failed": true, "msg": "Internal Error: this con
 PLAY RECAP *****************************************************************************************************************************
 win2012r2                  : ok=0    changed=0    unreachable=0    failed=1
 ```
+
