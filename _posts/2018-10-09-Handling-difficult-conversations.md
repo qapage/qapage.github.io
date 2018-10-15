@@ -9,23 +9,80 @@ tags: [leadership]
 
 ##### What are Crucial conversations?
 
-*They’re the day to day conversations that are affecting your life. They have the following characteristics: Opposing opinions, Strong emotions, High stakes.* 
+The first step to handling difficult conversations is to be aware of
+when they start happening and to be aware of your behavior when in the
+midst of such a conversation. The book "Crucial Conversations" defines
+these conversations as,
 
-The results of these conversations could have a huge impact on your lives. Despite the importance of these conversations, we some times back away from having them. We remain silent, we send email, we leave voicemails, we change the topic!
+*The day to day conversations that affect your life. They have 
+the following characteristics: Opposing opinions, Strong emotions
+and High stakes.*
 
-When it matters most, we do our worst. Because we default to a primitive state where emotion takes over, adrenaline + the fight/flight drive kicks in. We resort to sarcasm, thinly veiled attacks, passive aggression etc.
+The results of these conversations could have a huge impact on your lives.
+Despite the importance of these conversations, we some times back away
+from having them. We remain silent, we send email, we leave voicemails, we
+ change the topic! Given how important these are and how much of an impact
+ these could have on us, we surprisingly don't do well at them. In fact,
+ we are on our worst behavior. We default to a primitive state where
+ emotion takes over, adrenaline + the fight/flight drive kicks in. We
+ resort to sarcasm, thinly veiled attacks, passive aggression etc.
 
-Leaders some times restructure to address performance issues. They change policies, processes, KPI’s etc because human nature is just too messy to deal with. Personnel issues are ignored and then transferred to others. Rarely are issues like performance issues addressed head on. We can learn to directly address and try to resolve these situations by learning how to handle crucial conversations.
+Leaders don't always directly address issues because they are not
+comfortable having those conversations. Numbers are easy, reports are
+easy but talking to human beings especially when delivering negative
+feedback is not easy and leaders tend to avoid or postphone them. They
+sometimes just work around the problem by changing policies, processes,
+KPI's etc.
+
+It's also not fair to those employees who are missing out on hearing
+feedback that could tell them where they need to improve, how they could
+fix things etc etc. Today's world is one where everyone learns and
+improves and does bigger + better things. If we do not give folks the
+opportunity to learn everday, from things they do everyday, how do we
+ensure success? How do we go about building a high performing team with
+this critical piece missing?
 
 ##### Handling crucial conversations.
 
-Avoiding fool's choices
+The best chance of working successfully through a difficult conversation
+is to ensure free flow of information. Once all the potential
+information that could affect a decision or a viewpoint is on the table,
+a decision made then, could be the closest thing to the right decision.
+The other benefit of having everyone share their thoughts and opinions
+before making a decision is that people support the decision, once its
+made. For people to buy in to the decision, having been part of its
+making is a great plus.
 
-Fools choices are when you beleive you need to choose between one of two equally bad options.
-For example, how can I be 100% honest and at the same time 100% respectful of someone, when giving feedback? Does it always need to be a choice between being honest and being respectful? No. Achieve dialogue, enable the free flow of information rather than make a fools choice.
+When all the information is on the table, there's also a better chance
+of avoiding Fool's choices.
 
-The pool of shared meaning: each of us enters conversations with our own opinions, feelings, theories and experiences about the topic at hand. This pool informs us and also propels our action. When enter a crucial conversation, we don’t share the same pool. Our opinions differ, our ideas differ. As the pool of shared meaning grows, individuals are exposed to more accurate and relevant information and can then make better choices. And since the meaning is shared, everyone involved in the decision willingly acts on whatever decisions they make - with unity and conviction. You get buy in.
+*Fools choices are when you believe you need to choose from one of two
+bad options.*
 
-When people are not involved, they sit back during touchy discussions and they’ve not committed to the final decision. Their ideas remain in their head and their opinions rarely make it into the pool. They end up quietly criticizing and passively resisting.
+For example, you may feel like you need to choose between being honest
+and being truthful, when you don't really have to choose one or the
+other. You can do both at the same time. With some free flow of
+information, you may actually realize that there are more options than
+you initially realized, going into the discussion. Listening to other's
+thoughts may actually help your realize why they think that way, that
+they are not really wrong and how your initial options may have been
+formed based on incomplete information. When you get all the information
+out during a discussion, before a decision, you are building the pool of
+shared meaning.
 
-When stakes are high, opinions vary and emotions run strong, we are often at our worst. In order to move to our best, we need to find a way to explain what is in each of our personal pool of meaning - especially our high stakes, sensitive and controversial opinions, feelings and ideas and get other to share their pool. We have to develop the tools that make it safe for us to discuss these issues and to come to a shared pool of meaning.
+*The pool of share meaning: each of us enters conversations with our
+opinions, feelings, theories and experiences about the topic at hand.
+These shape how we view a solution. This pool informs us and also
+propels our action. When we start the conversation, we do not share the
+same pool of meaning. Once the pool grows through discussion,
+individuals are exposed to more accurate and relevant information. They
+can then make better choices based on the better information they now
+have.*
+
+When you provide a forum for discussion and to honestly air your views,
+there's a good chance that people will talk about their ideas or what's
+bothering them about a certain solution. This gives the group and you as
+a manager to address their concerns and thus come to a mutually
+agreeable conclusion. You are able to move people from quietly
+criticizing + passively resisting to openly discussion + actively
+supporting the decision.
