@@ -54,8 +54,10 @@ made. For people to buy in to the decision, having been part of its
 making is a great plus.
 
 ##### Fools choices
+
 *Fools choices are when you believe you need to choose from one of 
 two bad options.*
+
 When all the information is on the table, there's also a better chance
 of avoiding Fool's choices. For example, you may feel like you need to
 choose between being honest and being truthful, when you don't really
