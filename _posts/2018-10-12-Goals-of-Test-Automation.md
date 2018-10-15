@@ -66,8 +66,55 @@ production code actually works?
 
 
 ##### Tests should be easy to run
+Tests should be fully automated, repeatable, independent and self
+checking.
+
+They should be fully automated because otherwise, they will
+still need manual effort to setup or reset etc before each run and thus
+will add to development time, instead of making things faster. Anything
+that increases dev time is going to be cut out, sooner or later.
+
+Self checking tests are similar. If you have a test run but not tell you
+if it failed or not, you still need to get into the results and manually
+verify. That's no fun.
+
+They must be repeatable so that they can be run as many times as needed-
+on every commit, on every pull request etc etc. Being fully automated
+and self checking are sort of pre-conditions to this goal.
+
+Tests must be independent so that they can be run in any order, or run
+in isolation with requiring the whole test suite to run etc etc. If you
+change one line of code in one module, you need to be able to run tests
+that are specific to that module only. There's definitely value in
+running all the tests for every code change but you don't want to be
+forced to do that, if you don't want to.
+
 ##### Tests should be easy to write and maintain
+Let me blow your mind here by saying this: Tests are code! They need to
+be readable and maintainable like we want all other code to be. Tests
+become complicated when 1. we try to do too much in one test 2. not
+keeping test code [DRY](https://pragprog.com/the-pragmatic-programmer/extracts/tips).
+
+To keep tests simple, the best approach is to keep tests small and test
+one thing at a time. Each test should drive the system under test
+through a single code path. The exception to this would be Acceptance
+tests or Integration tests where we by definition need to work through
+multiple steps and multiple actions.
+
+Keeping tests DRY involves creating as many building blocks as possible,
+building out a supporting library that's as resuable as possible to
+ensure that folks writing the tests can focus on the tests and not have
+to re-implement all the test functionality needed to create that one
+test.
+
 ##### Tests should require minimal maintenance as the System evolves around them
+We don't want our tests to slow us down in times of change. How do we
+ensure that? We can do this by writing tests in such a way that the
+number of tests affected by any one change is quite small. We also need
+to ensure that the System under test and the environment are as loosely
+connected as possible. If we've made good use of DRY concepts, ideally
+all our setup, teardown etc would be localized to a few test utility
+functions for every change and thus become easier to identify + modify.
 
 A lot of this blog's thinking has been derive from this excellent book by Gerard Meszaros:
 [xUnit Test Patterns](https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054).
