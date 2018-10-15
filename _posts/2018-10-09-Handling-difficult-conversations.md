@@ -54,20 +54,20 @@ made. For people to buy in to the decision, having been part of its
 making is a great plus.
 
 ##### Fools choices
+*Fools choices are when you believe you need to choose from one of 
+two bad options.*
 When all the information is on the table, there's also a better chance
-of avoiding Fool's choices. *Fools choices are when you believe you need 
-to choose from one of two bad options.*
+of avoiding Fool's choices. For example, you may feel like you need to
+choose between being honest and being truthful, when you don't really
+have to choose one or the other. You can do both at the same time.
 
-For example, you may feel like you need to choose between being honest
-and being truthful, when you don't really have to choose one or the
-other. You can do both at the same time. With some free flow of
-information, you may actually realize that there are more options than
-you initially realized, going into the discussion. Listening to other's
-thoughts may actually help your realize why they think that way, that
-they are not really wrong and how your initial options may have been
-formed based on incomplete information. When you get all the information
-out during a discussion, before a decision, you are building the pool of
-shared meaning.
+With some free flow of information, you may actually realize that there
+are more options than you initially realized, going into the discussion.
+Listening to other's thoughts may actually help your realize why they
+think that way, that they are not really wrong and how your initial
+options may have been formed based on incomplete information. When you
+get all the information out during a discussion, before a decision, you
+are building the pool of shared meaning.
 
 ##### A shared pool of meaning
 
