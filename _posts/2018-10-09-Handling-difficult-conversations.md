@@ -7,7 +7,7 @@ tags: [leadership]
 
 #### The Crucial Conversations framework for handling difficult conversations
 
-##### What are Crucial conversations?
+##### Awareness
 
 The first step to handling difficult conversations is to be aware of
 when they start happening and to be aware of your behavior when in the
@@ -27,6 +27,7 @@ from having them. We remain silent, we send email, we leave voicemails, we
  emotion takes over, adrenaline + the fight/flight drive kicks in. We
  resort to sarcasm, thinly veiled attacks, passive aggression etc.
 
+##### Leaders: don't avoid hard conversations
 Leaders don't always directly address issues because they are not
 comfortable having those conversations. Numbers are easy, reports are
 easy but talking to human beings especially when delivering negative
@@ -42,8 +43,7 @@ opportunity to learn everday, from things they do everyday, how do we
 ensure success? How do we go about building a high performing team with
 this critical piece missing?
 
-##### Handling crucial conversations.
-
+##### Free flow of information
 The best chance of working successfully through a difficult conversation
 is to ensure free flow of information. Once all the potential
 information that could affect a decision or a viewpoint is on the table,
@@ -53,11 +53,10 @@ before making a decision is that people support the decision, once its
 made. For people to buy in to the decision, having been part of its
 making is a great plus.
 
+##### Fools choices
 When all the information is on the table, there's also a better chance
-of avoiding Fool's choices.
-
-*Fools choices are when you believe you need to choose from one of two
-bad options.*
+of avoiding Fool's choices. *Fools choices are when you believe you need 
+to choose from one of two bad options.*
 
 For example, you may feel like you need to choose between being honest
 and being truthful, when you don't really have to choose one or the
@@ -70,15 +69,22 @@ formed based on incomplete information. When you get all the information
 out during a discussion, before a decision, you are building the pool of
 shared meaning.
 
-*The pool of share meaning: each of us enters conversations with our
-opinions, feelings, theories and experiences about the topic at hand.
-These shape how we view a solution. This pool informs us and also
-propels our action. When we start the conversation, we do not share the
-same pool of meaning. Once the pool grows through discussion,
-individuals are exposed to more accurate and relevant information. They
-can then make better choices based on the better information they now
-have.*
+##### A shared pool of meaning
 
+*The pool of meaning: each of us enters conversations with our
+opinions, feelings, theories and experiences about the topic at hand.
+This is our pool of meaning, this is what drives us in certain ways and
+in certain directions.*
+
+When we start the conversation, we may not share the same pool of
+meaning. We are all operating from our own private pools. Once we start
+discussing, start sharing openingly the pool grows. All the information
+that would have otherwise remained in our heads and affected how we view
+the decision is now part of a public pool that others share. Individuals
+are now exposed to more accurate and relevant information. They can now
+make better choices with the better information they now have.
+
+##### Putting it all together
 When you provide a forum for discussion and to honestly air your views,
 there's a good chance that people will talk about their ideas or what's
 bothering them about a certain solution. This gives the group and you as
@@ -86,3 +92,4 @@ a manager to address their concerns and thus come to a mutually
 agreeable conclusion. You are able to move people from quietly
 criticizing + passively resisting to openly discussion + actively
 supporting the decision.
+
