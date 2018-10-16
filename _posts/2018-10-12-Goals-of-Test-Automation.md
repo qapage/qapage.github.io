@@ -7,7 +7,16 @@ tags: [testing]
 
 #### The Goals of Test Automation
 
-Test automation takes the manual effort out of testing. It makes it easy to run your test cycles as frequently as you want them to run, without worrying about how long it could take to get results, or how many test engineers you have on your team. Why do repetitive stuff manually when you can code them up and have them run automatically, quickly and more accurately than a human ever could?
+TLDR; The goals of test automation: improve the quality of software, serve as
+documentation for how features work, reduce risk (and not introduce more risk),
+be easy to run, write and maintain.
+
+Test automation takes the manual effort out of testing. It makes it easy to
+run your test cycles as frequently as you want them to run, without worrying
+about how long it could take to get results, or how many test engineers you
+have on your team. Why do repetitive stuff manually when you can code them
+up and have them run automatically, quickly and more accurately than a
+human ever could?
 
 Now, with the obvious out of the way, lets consider what goals we could
 have for test automation.
