@@ -1,13 +1,26 @@
 ---
 layout: post
-title: The Attach of the Killer B(enchmark)s
+title: The Attack of the Killer B(enchmark)s
 categories: [testing, performance]
 tags: [testing, performance]
 ---
 
 #### What is a benchmark anyway?
 Bencharking tests performance in a controller manner, allowing limits to
-be understood and degradation/service limiting happens.
+be understood and degradation/service limiting happens. Knowing these
+limits before you encounter them in production is great.
+
+Why do we benchmark? Some reasons include:
+* Tuning: To find out whats slow and tune it.
+* Development: Using a suite of non functional (performance) tests
+during development would help avoid performance issues (and regressions)
+from creeping in as we add more code/features.
+* Capacity Planning: determining system and application limits for
+capacity planning, to provide data models or for finding these limits
+directly.
+* Prototyping: In some cases, developing benchmarks with Proof of
+concepts might be required (or encouraged) before the full product is
+developed.
 
 #### Types of benchmarks
 Depending on the type of workload they test, there is a spectrum of
@@ -64,3 +77,21 @@ already for a variety of vendors and products.
 
 Some examples are,
 * MIPS: Million Instructions oer Second
+
+#### How to measure the right thing and measure it right?
+Benchmark is a non trivial activity, with lots of room for error and
+also for making outsize returns. The essence fo good bencharks (per
+Smalders 06) are,
+* Repeatable: to facilitate comparisons
+* Observbale: to facilitat understanding and measuremet of this
+performance
+* Portable: to be able to run on different on products ( even
+competitor's)
+* Easy to undestand, use now: do that everyone understands the results.
+
+What not to do, when you're benchmarking:
+* Avoid casual benchmarking
+* Numbers without Analysis
+* Testing the wrong things
+* Ignoring errors
+* Avoid Benchmark special
