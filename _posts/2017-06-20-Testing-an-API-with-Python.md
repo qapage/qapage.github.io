@@ -32,7 +32,7 @@ Here's what the simplest test case looks like,
 ```
 from requests import get
  
-ip = get(‘https://api.ipify.org').text
+ip = get(‘https://api.ipify.org', verify=False).text
 print(‘My public IP address is: {}’.format(ip))
 ```
 
@@ -63,13 +63,13 @@ jsonp_callback_url = 'https://api.ipify.org?format=jsonp&callback=getip'
 
 def get_response(test_url=test_url, format='text'):
     if format == 'text':
-        response = get(test_url)
+        response = get(test_url, verify=False)
     elif format == 'json':
-        response = get(json_url)
+        response = get(json_url, verify=False)
     elif format == 'jsonp':
-        response = get(jsonp_url)
+        response = get(jsonp_url, verify=False)
     elif format == 'jsonp_callback':
-        response = get(jsonp_callback_url)
+        response = get(jsonp_callback_url, verify=False)
 
     return response.text
 
@@ -158,19 +158,19 @@ class TestApi():
 
     def get_response(self, test_url=test_url, format='text'):
         if format == 'text':
-            response = get(test_url)
+            response = get(test_url, verify=False)
         if format == 'somethinginvalid':
-            response = get(invalid_url)
+            response = get(invalid_url, verify=False)
         elif format == 'json':
-            response = get(json_url)
+            response = get(json_url, verify=False)
         elif format == 'jsonp':
-            response = get(jsonp_url)
+            response = get(jsonp_url, verify=False)
         elif format == 'jsonp_callback':
-            response = get(jsonp_callback_url)
+            response = get(jsonp_callback_url, verify=False)
         elif format == 'jsonp_invalid_callback':
-            response = get(invalid_callback_url)
+            response = get(invalid_callback_url, verify=False)
         if format == 'baddata':
-            response = get(test_url + '?format=!#$')
+            response = get(test_url + '?format=!#$', verify=False)
 
         return response.text
 
@@ -247,19 +247,19 @@ class TestApi():
 
     def get_response(self, test_url=test_url, format='text'):
         if format == 'text':
-            response = get(test_url)
+            response = get(test_url, verify=False)
         if format == 'somethinginvalid':
-            response = get(self.invalid_url)
+            response = get(self.invalid_url, verify=False)
         elif format == 'json':
-            response = get(self.json_url)
+            response = get(self.json_url, verify=False)
         elif format == 'jsonp':
-            response = get(self.jsonp_url)
+            response = get(self.jsonp_url, verify=False)
         elif format == 'jsonp_callback':
-            response = get(self.jsonp_callback_url)
+            response = get(self.jsonp_callback_url, verify=False)
         elif format == 'jsonp_invalid_callback':
-            response = get(self.invalid_callback_url)
+            response = get(self.invalid_callback_url, verify=False)
         if format == 'baddata':
-            response = get(self.test_url + '?format=!#$')
+            response = get(self.test_url + '?format=!#$', verify=False)
 
         return response.text
 
