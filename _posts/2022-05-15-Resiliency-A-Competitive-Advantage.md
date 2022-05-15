@@ -20,7 +20,7 @@ Your system now has lots of failure modes. And given how many of those exist, yo
 
 ![placeholder](/assets/images/The_Complex_pattern_of_the_Zeebrugge_accident.png)
 
-Figure 2 shows a causal tree derived from the Zeebrügge accident where several decision makers at different times, in different parts of a shipping company, all are striving locally to optimise cost effectiveness and thus are preparing the stage for an accident. The dynamic flow of events can then be released by a single human act.
+The above figure shows a causal tree derived from the Zeebrügge accident where several decision makers at different times, in different parts of a shipping company, all are striving locally to optimise cost effectiveness and thus are preparing the stage for an accident. The dynamic flow of events can then be released by a single human act.
 
 As seen by the individual decision makers from the front end, it will be difficult to see the total picture during their daily operational decision making. The individual decision makers cannot see the complete picture and judge the state of the multiple defences conditionally depending on decisions taken by other people in other departments and organisations.
 
