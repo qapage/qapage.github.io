@@ -18,4 +18,4 @@ toughness.
 
 If you're trying to avoid failure, its unfortunately not going to happen.
 
-![placeholder](assets/images/Rasmussen_model_1997.png)
+![placeholder](/assets/images/Rasmussen_model_1997.png)
