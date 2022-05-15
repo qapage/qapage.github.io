@@ -33,12 +33,10 @@ But a chain of small failures tied together, form a catastrophic failure.
 #### The Rasmussen Model, 1997
 ![placeholder](/assets/images/Rasmussen_model_1997.png)
 
-This model helps us understand how systems work and how they are on the edge of safety.
-If the lights are on and the doors are open, your business is running and you must stay within this edge of economic failure boundary. Anything outside leads your business to collapse.
-
-The next boundary is the unacceptable workload boundary. This is where your workforce burns out and collapses if they work more than this. 
-
-The final boundary is the acceptable performance boundary. This can be defined as the mean time between failures or by outages etc. This what we're to call as acceptable performance for the system.
+This model helps us understand how systems work and how they are on the edge of safety. There are three boundaries of interest for ay complex system. They are,
+* the Economic failure boundary: if the lights are on and the doors are open, your business is running and you must stay within this edge of economic failure boundary. Anything outside leads your business to collapse.
+* the Unacceptable workload boundary: this is where your workforce burns out and collapses if they work more than this. 
+* the Acceptable performance boundary: this can be defined as the mean time between failures or by outages etc. This what we're to call as acceptable performance for the system.
 
 The space in between these boundaries is where the operating space of your system. The operating point between these boundaries keeps moving as it keeps adjusting to different things.
 
