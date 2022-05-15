@@ -36,8 +36,12 @@ But a chain of small failures tied together, form a catastrophic failure.
 This model helps us understand how systems work and how they are on the edge of safety. There are three boundaries of interest for ay complex system. They are,
 * the Economic failure boundary: if the lights are on and the doors are open, your business is running and you must stay within this edge of economic failure boundary. Anything outside leads your business to collapse.
 * the Unacceptable workload boundary: this is where your workforce burns out and collapses if they work more than this. 
-* the Acceptable performance boundary: this can be defined as the mean time between failures or by outages etc. This what we're to call as acceptable performance for the system.
+* the Acceptable performance boundary: this can be defined as the mean time between failures or by outages etc. This what we're to call as acceptable performance for the system. This is also called the Accident boundary.
 
-The space in between these boundaries is where the operating space of your system. The operating point between these boundaries keeps moving as it keeps adjusting to different things.
+The space in between these boundaries is where the operating space of your system. The operating point between these boundaries keeps moving as it keeps adjusting to different things. An accident or disaster or outage happens when the operating point moves outide these boundaries.
 
+There are a couple of forces that are constantly acting on the operating point and forcing it specific directions. They are,
+* there's a management pressure for economic efficiency, to push the operating point away from the economic failure boundary. this pressure is stronger the closer your operating point is to the economic failure boundary.
+* the closer you are to the unacceptable workload boundary, the stronger is the pressure to push the operating point away from this boundary.
 
+As a consequence, the system is going to be acted on in tandem by both these pressures and push the operating point towards the accident boundary. Left untended, the operating point moves closer and closer to the accident boundary.
