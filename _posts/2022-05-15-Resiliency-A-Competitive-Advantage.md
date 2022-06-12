@@ -45,3 +45,28 @@ There are a couple of forces that are constantly acting on the operating point a
 * the closer you are to the unacceptable workload boundary, the stronger is the pressure to push the operating point away from this boundary.
 
 As a consequence, the system is going to be acted on in tandem by both these pressures and push the operating point towards the accident boundary. Left untended, the operating point moves closer and closer to the accident boundary.
+
+#### If failure is inevitable, what can we do?
+
+There's only so much you can do to prevent failure. After a point, you hit dimnishing returns. What you can do though, is prepare for failure. You can,
+* plan for how to respond to failure
+* plan for quick recover
+* plan for graceful failure
+
+And that is how you plan for Resiliency. Resiliency sets you apart.We can and should address resiliency in two domains. The People domain and the Technology domain. Each of them are equally important.
+
+#### Resiliency in the People domain
+
+Here are a few ways I think about resiliency in the people domain,
+* talent reviews: knowing where people stand today, knowing where they want to go and helping them get there
+* succession planning: do we have too much riding on one person? Is one person irreplaceable  because no one else knows what they do? And if that someone cannot be replaced, how do we support their growth?
+* organization design: what does this organization/team need to look like next year based on the things we want to accomplish?
+* relationships and trust: building relationships and trust in those relationships before you start needing them because it's hard to build them on demand. When a crisis hits, the last thing you want is a team that does not trust each other and work well with each other.
+
+
+#### Resiliency in the Technology domain
+Here are a few ways I think about resiliency in the technology domain,
+* disaster recovery: designing for DR and executing it regularly
+* architecture resiliency patterns: Failover strategies, Data loss prevention strategies, loosely coupled architectures, short release cycles and single responsibility architectures
+* failing gracefully: In today's technical environments there are so many moving part, so many 99.9% SLAs but put them all in serial, what you experience is far less than 99.9% SLA overall. Failure is certain. How do you fail gracefully?
+
