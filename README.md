@@ -1,4 +1,4 @@
-## qapage.com
+## softwareled.com
 ### Setting up a local dev environment
 * clone this repo, cd into it
 
@@ -15,4 +15,4 @@ gem 'github-pages', group: :jekyll_plugins
 * bundle exec jekyll serve
 =======
 
-## For all things QA
+        ## For all things Software Leadership related.
