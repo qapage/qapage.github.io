@@ -18,6 +18,9 @@ All those vendors, all those dependencies, those interacting systems, those data
 
 Your system now has lots of failure modes. And given how many of those exist, you're probably not even aware of all the little failures that are constantly happening across your system. That is, your system is probably running in a degraded state a lot more than you know. You only notice when the degradation becomes bigger.
 
+#### The Zeebrugge Ferry accident
+![placeholder](/assets/images/Herald_of_Free_Enterprise.jpeg)
+
 ![placeholder](/assets/images/The_Complex_pattern_of_the_Zeebrugge_accident.png)
 
 The above figure shows a causal tree derived from the Zeebrügge accident where several decision makers at different times, in different parts of a shipping company, all are striving locally to optimise cost effectiveness and thus are preparing the stage for an accident. The dynamic flow of events can then be released by a single human act.
@@ -25,7 +28,6 @@ The above figure shows a causal tree derived from the Zeebrügge accident where 
 As seen by the individual decision makers from the front end, it will be difficult to see the total picture during their daily operational decision making. The individual decision makers cannot see the complete picture and judge the state of the multiple defences conditionally depending on decisions taken by other people in other departments and organisations.
 
 A single failure may allow the ship to remain afloat.
-![placeholder](/assets/images/Herald_of_Free_Enterprise.jpeg)
 
 But a chain of small failures tied together, form a catastrophic failure.
 ![placeholder](/assets/images/herald_of_free_enterprise_capsized.png)
