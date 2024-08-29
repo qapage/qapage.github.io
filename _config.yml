@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: SoftwareLed.com
+title: OnSiteReliability.com
 email: deepak.bhaskaran@gmail.com
 description: >
   This is a page that is for all things QA related. I’ve relied on a lot of resources on the internet for 
@@ -16,7 +16,7 @@ description: >
   there that is looking for QA related information.
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "en"
-url: "http://www.qapage.com" # the base hostname & protocol for your site
+url: "https://onsitereliability.com/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  qapage
 disqus_username:
