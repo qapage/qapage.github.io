@@ -8,8 +8,19 @@ summary: "About this blog"
 active: about
 ---
 
-Everywhere you go, everything you do, you're most likely touching something running software or running on software. 
+Software is everywhere but reliable software is still rare. We live in a world w
+here software bugs can and do ground planes, block medication from being prescri
+bed, block financial transactions from completeing etc.
 
-Software is all pervasive today. A lot of good practices of yesteryears  came up from the manufacturing industry. I think its the Software Industry's time to shine now.
+How do we ensure that critical software is reliable, and works as expected in al
+l situations. 100% uptime is impossible but there should be planning for gracefu
+l degradation, for creating paths of resilience so that impact of any outages ar
+e minimized.
 
-More about me at [Deepak Bhaskaran, BE, MBA](https://www.linkedin.com/in/deepakbhaskaran/)
+I've learnt a lot over the years working in different aspects of the software li
+fecycle, for different organizations with varied needs and customer expectations
+. I'm going to try and pen down notes on what I learnt, and what I think will be
+ useful for folks interested in this field to be thinking about.
+
+More about me at [Deepak Bhaskaran, BE, MBA](https://www.linkedin.com/in/deepakb
+haskaran/)
