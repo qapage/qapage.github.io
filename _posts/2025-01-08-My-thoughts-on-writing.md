@@ -23,3 +23,4 @@ Take time to clarify your thoughts. Once your thinking is clear, your writing wi
 
 #### Stay consistent.
 Stay in a consistent voice all through your writing. That does not mean speaking in a monotone. If you started in a tense, stay in that tense all through. If you started writing informally, stay that way instead of going back and forth. If you start writing in the first person, about your experience, stay that way till the end of the work.
+Sure, there can be surprises and twists in the plot, but keep your voice consistent.
