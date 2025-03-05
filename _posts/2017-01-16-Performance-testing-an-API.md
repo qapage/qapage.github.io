@@ -5,24 +5,29 @@ categories: [csv, data]
 tags: [csv]
 ---
 
+### APIs are everywhere!
+APIs is another way in which customers can access our service. It allows customers to customize their use of our service, integrate it into their own products and generally use it in ways that we might not have thought of. If we did not have an API, and only offered a UI we might be limiting our customer base to only those who are able to use the UI and are satisfied with the features we offer in the UI. More and more services are offering API's as first class options, alongside UI's.
+
+With an API comes the need to performance test it. The API is a service that is being used by customers and we need to ensure that it is able to handle the load that is being put on it. If the API is slow, customers will not be happy. If the API is down, customers will not be happy. If the API is not able to handle the load, customers will not be happy.
+
 There are several good tools that can help you performance test an API. I’ve used jmeter, locust.io and a wee bit of Gatling. locust.io has become my go to tool for all recent performance testing work. 
 
-Why locust.io?
+### Why locust.io?
 
 #### Ease of use
+Locust is really easy to use. You can get started with a simple script that you can write in a few minutes.
 Its really easy to get started and have a working performance test running with locust
 
 #### Open source
-The code is available to you! Say you’re working on a project and that turns out to need more than what locust offers out of the box. What now? If you know a bit of python or are willing to dig in and learn, you can look at the code and make your changes! If its something that might be universally useful, you just submit a pull request and there’s a good chance it will get added into the product itself.
+Locust is open source. The code is available to you! Say you’re working on a project and that turns out to need more than what locust offers out of the box. What now? If you know a bit of python or are willing to dig in and learn, you can look at the code and make your changes! If its something that might be universally useful, you just submit a pull request and there’s a good chance it will get added into the product itself.
 
-#### python
+#### Python based
 Everything in locust.io is python based. Your tests get written in python, the entire codebase of locust.io is python based etc. So if you already know python - locust is going to be piece of cake.
 
-#### lightweight
-locust is extremely light weight and can be run on your personal machine to generate pretty high loads on the target machine. I’ve sometimes run into a limitation while using jmeter, which is java based, where it ends up taking my personal machine down while trying to generate high enough loads to load the target machine.
+#### Lightweight
+Locust is extremely light weight and can be run on your personal machine to generate pretty high loads on the target machine. I’ve sometimes run into a limitation while using jmeter, which is java based, where it ends up taking my personal machine down while trying to generate high enough loads to load the target machine.
 
-#### Sample Code
-
+### Sample Code
 I like to read a little intro and then right away look at code. This article is written that way as well, here’s a simple code example.
 
 ```
@@ -52,19 +57,25 @@ If you look closely, the variable tasks contains the list of tasks that are to b
 
 The min_wait and max_wait are set to 5000 and 9000, which means each simulated user will wait between 5 and 9 seconds between the requests. 
 
-#### Launching
-
+### Launching
 Where to start? Right here - just follow the below steps
 
 ```
-pip install virtualenv
-virtualenv <name your environment> eg, virtualenv perftest
-source perftest/bin/activate
-pip install locustio
-Copy the above script into a python file named locustfile.py
-start locust with this command `locust -f locustfile.py –host <your apps url>`
+#Setup the environment
+#Step one, two & three create a python virtualenv for you to play around in. Step four gets locust installed. 
+$ pip install virtualenv
+$ virtualenv <name your environment> eg, virtualenv perftest
+$ source perftest/bin/activate
+$ pip install locustio
+
+#Run the test
+Copy the python code from earlier in this article to locustfile.py
+
+start locust with the below command,
+$ `locust -f locustfile.py –host <your apps url>`
+
 profit!
-Step one, two & three create a python virtualenv for you to play around in. Step four gets locust installed. 
+
 ```
 
 What do the results look like?
@@ -76,7 +87,7 @@ The results look like for our example,
 
 You know now that your app supports 20 concurrent users, hitting the app at the rate of 3 new requests per second - without resulting in any failures. You can keep increasing the rate of new users and the total number of concurrent users until you see failures - if you want to find out your system’s limits.
 
-#### Additional Ideas
+### Additional Ideas
 
 Suppose you have a library that someone has built around your REST API. That means its really simple to interact with the API now but you’re not able to use the requests library directly and thus locust does not know if a request failed or passed, how long it took etc. What do you do now? 
 
