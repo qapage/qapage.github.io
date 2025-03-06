@@ -21,6 +21,8 @@ Put brackets around every component in a piece of writing that is not doing usef
 #### Clarify your thoughts.
 Take time to clarify your thoughts. Once your thinking is clear, your writing will become clear. Don’t expect to sit down and crank out 40 pages of clear writing on day one. It’s going to take time and draft after draft, before you get there. And that’s ok.
 
+Go back the next day and read what you wrote. Let your mind wander a bit, think about what you wrote, see how you feel about it now that your brain has had some time to think about it. You might have additional ideas come to you now. Or you might see gaps in your writing that you didn’t see before. You can fill those gaps now.
+
 #### Stay consistent.
 Stay in a consistent voice all through your writing. That does not mean speaking in a monotone. If you started in a tense, stay in that tense all through. If you started writing informally, stay that way instead of going back and forth. If you start writing in the first person, about your experience, stay that way till the end of the work.
 Sure, there can be surprises and twists in the plot, but keep your voice consistent.
