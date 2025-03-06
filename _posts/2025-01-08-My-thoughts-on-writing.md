@@ -7,7 +7,13 @@ tags: [writing]
 
 I'm an aspiring writer. I write blogs, I've written two chapters in a book and I hope to write books in the future. Its like any other craft that you want to get better at. You put time in, and you get better. The more you write, the better you get.
 
-Here are some of the things I've learned and have been practicing as I write,
+#### Why do I want to write?
+
+I've read so many good stories, and books and articles. They live on in time. They stick around long after the author's have passed on. When you write, you have the opportunity to tell a story the way you see it. The way only you or someone with a lot of shared experiences with you would see it. I'm an immigrant to the US, a software engineer and an MBA holder, a doer and a leader, someone that grew up in a big city speaking one language at home, and other languages everywhere else. I'm someone that had to change my accent to make sure that I did not have to repeat myself over and over to folks that did not understand my original accent. I'm someone that was constantly in trouble as a kid but learned to calm down, to focus, to get things done, enough to have a decent career. 
+
+I've not read stories or books written by folks that come from this background. And if I don't write, those stories will never be told, not from someone in my shoes. Others might write about us but they are on the outside, looking in through these opaque glass windows that are streaked with dust and rain from the years. I want to wipe away that dust, and paint a clear picture of my world. Maybe its useful for others, maybe its not but I want to write it down.
+
+It is not enough to want to write. It is important to do it well, so that the quality of the writing does not get in the way of the story. So I've been reading books on writing, from different authors from different genres. These have been helpful. I will share some of what I've learnt and some of what I have been practicings as I write,
 
 #### Write in simple words. Write like you speak. 
 If you don’t use fancy words when you speak, don’t use fancy words when you write. After you write, read it out loud. If it does not flow, and sounds awkwardly put together, thats what it will feel like to the reader as well.
