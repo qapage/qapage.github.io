@@ -33,4 +33,4 @@ He suggests reading Strunk and White's "The Elements of Style". He says that it 
 
 Here's a link to the full article: [Kurt Vonnegut On How to write with style](https://www.bu.edu/clarion/guides/vonnegut-1980.pdf)
 
-There's an example of a letter Kurt wrote to his father in May 1945, when he was in the Le Havre, Prison of War Repatriation Camp. This letter was published after his death in 2007, in the book "Armageddon in Retrospect". Even though it was written when Kurt was 22 years old, it already shows his writing style. It is simple, direct, and full of humor. It was written out of his deeply felt need to share with his family, what he had been through.
+It's worth reading the [letter](https://www.newsweek.com/kurt-vonnegut-his-time-pow-91061) Kurt wrote to his father in May 1945, when he was in the Le Havre, Prison of War Repatriation Camp. This letter was published after his death in 2007, in the book "Armageddon in Retrospect". Even though it was written when Kurt was 22 years old, it already shows his writing style. It is simple, direct, and full of humor. It was written out of his deeply felt need to share with his family, what he had been through.
