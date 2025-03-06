@@ -25,8 +25,12 @@ Take time to clarify your thoughts. Once your thinking is clear, your writing wi
 Stay in a consistent voice all through your writing. That does not mean speaking in a monotone. If you started in a tense, stay in that tense all through. If you started writing informally, stay that way instead of going back and forth. If you start writing in the first person, about your experience, stay that way till the end of the work.
 Sure, there can be surprises and twists in the plot, but keep your voice consistent.
 
-#### Show your work.
+#### Show your work and don't wait for that perfect version.
 Write and share your work with folks. Get feedback from a few trusted folks first. Make changes based on their feedback, and then put it out again. If you are writing technically, pick a couple of technical reviewers so they can point out missing details, factual errors, irrelevant tangents etc etc. If possible get a couple of non technical reviewers as well. Someone that is not in the weeds, or not as close to your work or your domain but might be closer to your target user. They can give you feedback on voice, do some editing for you, show you were your dots don't connect etc.
+
+Don't let perfect get in the way of good. Write a first draft. Make it better. Give it some time. Let it breathe and then go back and make it better again. No one see's the first draft. It's for you. Don't let the first version, regardless of how bad it is, stop you from writing.
+
+Kurt Vonnegut said, "When I write, I feel like an armless, legless man with a crayon in his mouth." That's how I feel when I write. I know there's a good version in there somewhere but there's a lot of cruft I need to go through, and discard before I get to the good stuff.
 
 #### Grammar and Spelling.
 I care about grammar and spelling. Its not because I'm a purist about language or because I'm a rule follower. I just think that spelling mistakes or grammar mistakes are distracting. People notice them, and they lose track of what they are reading each time they notice an error. At some point, if there are too many errors, it paints a picture of a hastily put together piece of work where the Author and Editor both have low standards. I try to use a spell checker, or Grammarly to help with this. 
