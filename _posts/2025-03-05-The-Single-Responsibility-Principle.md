@@ -5,8 +5,6 @@ categories: [software, architecture]
 tags: [software, architecture, design, principles, SOLID]
 ---
 
-#### What is the Single Responsibility Principle?
-
 The Single Responsibility Principle (SRP) is a software design principle that states that a class should have only one reason to change. In other words, a class should have only one responsibility. The Single Responsibility Principle is often attributed to Robert C. Martin ("Uncle Bob") as part of his "SOLID" design principles for object-oriented programming. 
 
 #### Why is the Single Responsibility Principle important?
