@@ -15,11 +15,12 @@ I've not read stories or books written by folks that come from this background. 
 
 It is not enough to want to write. It is important to do it well, so that the quality of the writing does not get in the way of the story. So I've been reading books on writing, from different authors from different genres. These have been helpful. I will share some of what I've learnt and some of what I have been practicings as I write,
 
-#### Write in simple words. Write like you speak. 
+#### Write in simple words. Write like you speak. Write like yourself. 
 If you don’t use fancy words when you speak, don’t use fancy words when you write. After you write, read it out loud. If it does not flow, and sounds awkwardly put together, thats what it will feel like to the reader as well.
 
-#### Write like yourself. 
 Be yourself when you write. Your voice is uniquely yours and will get diluted, and valueless if you try to sound like someone else. Write about things you care about. Write about things you know about, and have strong opinions about. If you don’t care or know enough about something, don’t write about it, unless you think of writing as a way to learn. It’s ok to take a stand. It’s ok to be different. You don’t have to be but it’s ok if you are.
+
+Here's a great Kurt Vonngut quote, "Write like a human being. Write like a writer." This is great advice and you should listen to him. He advices writing with simplicity and clarity, writing with genuine emotion and avoiding pretentiousness. In urging folks to write like a writer, he is asking that we treat writing like a craft, something to be learned, improved and constantl honed.
 
 #### Advice from the book ’On Writing Well’: Simplify, simplify, simplify.
 Put brackets around every component in a piece of writing that is not doing useful work. Then cut them. Avoid clutter. I was going to say, Avoid clutter like the plague and then after reading this paragraph, I heard the hypocrisy. 
