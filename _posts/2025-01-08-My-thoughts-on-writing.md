@@ -5,7 +5,7 @@ categories: [writing]
 tags: [writing]
 ---
 
-I'm an aspiring writer. I write blogs, I've written two chapters in a book and I hope to write books in the future. Its like any other craft that you want to get better at. You put time in, and you get better. The more you write, the better you get.
+I'm an aspiring writer. I write blogs, I've written two chapters in a book and I hope to write books in the future. It's like any other craft that you want to get better at. You put time in, and you get better. The more you write, the better you get.
 
 #### Why do I want to write?
 
@@ -20,7 +20,7 @@ If you don’t use fancy words when you speak, don’t use fancy words when you 
 
 Be yourself when you write. Your voice is uniquely yours and will get diluted, and valueless if you try to sound like someone else. Write about things you care about. Write about things you know about, and have strong opinions about. If you don’t care or know enough about something, don’t write about it, unless you think of writing as a way to learn. It’s ok to take a stand. It’s ok to be different. You don’t have to be but it’s ok if you are.
 
-Here's a great Kurt Vonngut quote, "Write like a human being. Write like a writer." This is great advice and you should listen to him. He advices writing with simplicity and clarity, writing with genuine emotion and avoiding pretentiousness. In urging folks to write like a writer, he is asking that we treat writing like a craft, something to be learned, improved and constantl honed.
+Here's a great Kurt Vonnegut quote, "Write like a human being. Write like a writer." This is great advice and you should listen to him. He advices writing with simplicity and clarity, writing with genuine emotion and avoiding pretentiousness. In urging folks to write like a writer, he is asking that we treat writing like a craft, something to be learned, improved and constantly honed.
 
 #### Advice from the book ’On Writing Well’: Simplify, simplify, simplify.
 Put brackets around every component in a piece of writing that is not doing useful work. Then cut them. Avoid clutter. I was going to say, Avoid clutter like the plague and then after reading this paragraph, I heard the hypocrisy. 
