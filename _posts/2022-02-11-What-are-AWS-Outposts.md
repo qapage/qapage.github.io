@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Outposts for Managers
+title: What are AWS Outposts?
 categories: [AWS]
 tags: [AWS]
 ---
