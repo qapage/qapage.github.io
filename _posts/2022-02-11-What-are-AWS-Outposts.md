@@ -5,7 +5,13 @@ categories: [AWS]
 tags: [AWS]
 ---
 
-AWS Outposts were originally introduced by Amazon in 2019. They allow extending an AWS region into an on premise data center. This allows for a hybrid cloud solution where some workloads can be run on premise and some in the cloud. AWS Outposts are fully managed by AWS and are delivered to the customer's data center pre-configured and ready to use. They are connected to the AWS region over a dedicated connection and cannot work in a disconnected environment. They require permanent, reliable network connectivity to a parent region, as they are only an extension of the AWS region and do not stand alone. They are managed by AWS but the customer is responsible for certain aspects like physical security and power. They are typically a pool of AWS Compute and Storage capacity deployed in a customer's data center. AWS Outposts rack leverages AWS designed infrastructure, and is only supported on AWS-designed hardware that is optimized for secure, high-performance, and reliable operations. That means customers cannot just bring in any servers they own, and set them up inside the Outpost rack. These resources are managed the same way as resources in the AWS cloud. The customer can use the same AWS APIs, tools, and console to manage the resources on the Outpost.
+AWS Outposts, introduced in 2019, extends native AWS infrastructure and services into on-premises data centers, creating a seamless hybrid cloud environment. This allows some workloads to be run on premise and some in the cloud. This fully managed solution comes pre-configured at your facility, ready for use. 
+
+Outposts require a dedicated connection to its parent AWS region and cannot work in a disconnected environment, as it functions as an extension, rathern than a standalone entity. While AWS handles the management of the Outpost, the customer is responsible for the physical security and power.
+
+Outposts deliver a pool of AWS Compute and Storage capacity deployed in a customer's data center, that operates on AWS designed infrastructure that is optimized for secure, high-performance, and reliable operations. That means customers cannot integrate existing server hardware into an Outpost rack. 
+
+The key advantage of Outposts is operational consistency: resources are managed using the same AWS APIs, tools, and console that you would use in the AWS cloud, enabling unified management across your hybrid environment.
 
 Here are some common use cases for AWS Outposts:
 - Low latency applications that require processing close to the data source
