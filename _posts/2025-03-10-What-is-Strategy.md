@@ -29,3 +29,28 @@ The strategic sweet spot of a company is where it meets customers' needs in away
 The industry you are in will have a significant impact on your strategy. Different industries have different competitive dynamics, different customer needs, and different ways of creating value. Understanding the industry you are in is critical to developing a successful strategy. Not all industries perform equally. Some do really well (like Software, Softdrinks, Pharmaceuticals etc) and others have a hard time staying profitable (like Airlines, Hotels etc). There's published research that shows that average companies in a great industry might outperform great companies in a poor industry. Your strategy needs to account for the specific dynamics of your industry.
 
 Porter's five forces model is a great way to understand the competitive dynamics of your industry. It helps you understand the forces that shape the industry and how they affect your business. The five forces are the threat of new entrants, the bargaining power of suppliers, the bargaining power of buyers, the threat of substitutes, and the intensity of rivalry among competitors. Understanding these forces can help you develop a strategy that will allow you to compete effectively in your industry.
+
+##### The internal capabilities and resources of the company
+The resource-based view (RBV) is a model for firm performance that focuses on the resources and capabilities a firm controls as sources of competitive advantage. Resources refer to the tangible and intangible assets that a firm can use to implement its strategy. Capabilities refer to the ability of a firm to use its resources to achieve a particular end.
+
+There are three kinds of resources,
+- Tangible resources: includes financial assets like cash, securities and physical assets like plant, equipment, land, and inventory
+- Intangible resources: includes technology assets like patents, copyrights etc, reputation and organizational culture
+- Human resources: includes the skills, knowledge, and motivation of the employees of the firm
+
+There are two kinds of capabilities,
+- Operational capabilities: the ability of a firm to perform its core operations effectively and efficiently
+- Dynamic capabilities: the ability to integrate, build, and reconfigure internal resources to address new opportunities and challenge.
+
+The VRIO (Value, Rarity, Inimitability, Organization) framework extends the resource-based view (RBV) to analyze all the resources and capabilities a firm possesses. The VRIO framework is used to determine a firm’s potential to generate competitive advantages.
+
+The VRIO framework focuses on answering the following four questions for each resource and capability:
+
+- The question of value: Does the resource or capability allow the exploitation of an external opportunity or the neutralization of a threat? Resources are not inherently valuable. They must enable a firm to exploit an opportunity or neutralize a threat, to be considered valuable.
+
+- The question of rarity: Is the resource or capability controlled by a small number of competing firms? A resource or capability is rare as long as the number of firms with the resource or capability is smaller than the number of firms required for perfect competition. Thus, if many firms possesses a resource or capability, then it is unlikely to be a source of competitive advantage for any of the firms. 
+
+- The question of imitability: Is the resource or capability costly to obtain for firms without the resource or capability? A resource or capability is inimitable if it is more costly for the firms that do not possess it to acquire or develop it compared to the firms that already possess it.
+
+- The question of organization: Are other policies and procedures organized to exploit the resource or capability? A valuable, rare, and inimitable resource or capability does not in itself provide a sustainable competitive advantage, the firm must be organized appropriately to fully exploit the resource or capability and turn a potentially unused competitive advantage into a sustainable competitive advantage. 
+
