@@ -22,3 +22,10 @@ You need to define the scope in which you expect to operate. Too broad a domain,
 Your competitive advantage is what sets you apart from your competitors. It is why customers buy your products and why investors fund you, instead of that other company across the street. You need to be clear about why you are better than your competitors and how you are going to maintain that advantage.
 
 The strategic sweet spot of a company is where it meets customers' needs in away that rivals cannot, given the context in which it operates. Bringing in employees into the process of developing the strategy and crafting a communicable version of your strategy is important. It allows the strategy to be well understood and increases confidence that frontline employees will be guided by the right princples, as set out in the strategy. 
+
+#### What are some other factors that affect the success of your strategy and your business?
+
+##### The industry you are in
+The industry you are in will have a significant impact on your strategy. Different industries have different competitive dynamics, different customer needs, and different ways of creating value. Understanding the industry you are in is critical to developing a successful strategy. Not all industries perform equally. Some do really well (like Software, Softdrinks, Pharmaceuticals etc) and others have a hard time staying profitable (like Airlines, Hotels etc). There's published research that shows that average companies in a great industry might outperform great companies in a poor industry. Your strategy needs to account for the specific dynamics of your industry.
+
+Porter's five forces model is a great way to understand the competitive dynamics of your industry. It helps you understand the forces that shape the industry and how they affect your business. The five forces are the threat of new entrants, the bargaining power of suppliers, the bargaining power of buyers, the threat of substitutes, and the intensity of rivalry among competitors. Understanding these forces can help you develop a strategy that will allow you to compete effectively in your industry.
