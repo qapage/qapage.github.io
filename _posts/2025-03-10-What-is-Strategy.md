@@ -54,3 +54,28 @@ The VRIO framework focuses on answering the following four questions for each re
 
 - The question of organization: Are other policies and procedures organized to exploit the resource or capability? A valuable, rare, and inimitable resource or capability does not in itself provide a sustainable competitive advantage, the firm must be organized appropriately to fully exploit the resource or capability and turn a potentially unused competitive advantage into a sustainable competitive advantage. 
 
+#### How do you apply these concepts?
+
+Say you're thinking about a company, create five buckets, one for each of the resources and capabilities of the company. And then for each of the things you put in the buckets, ask the VRIO questions. Is this valuable, is this rare, is this inimitable, is the company organized to take advantage of this? If you can answer yes to all of these questions, then the company has a sustainable competitive advantage.
+
+For example, let's take Microsoft Azure Active Directory (Azure AD), a leading identity and access management service from Microsoft.
+
+Lets put together the five buckets for Azure AD,
+
+1. Tangible resources: Microsoft's data centers, servers, network infrastructure, and about $100 billion in cash and short-term investments
+2. Intangible resources: Microsoft's brand, reputation, and customer relationships
+3. Human resources: Microsoft's employees, including engineers, salespeople, and customer support staff
+4. Operational capabilities: Microsoft's ability to develop, deploy, and maintain Azure AD
+5. Dynamic capabilities: Microsoft's ability to adapt Azure AD to new technologies and customer needs
+
+##### VRIO Conclusion for Microsoft Azure AD:
+- Data centers: valuable but not rare.
+- Servers/network infra: valuable but not rare.
+- $100 billion in Cash and short term investments: valuable, and quite rare.
+- Brand and Reputation: valuable, rare, inimitable.
+- Customer relationships: valuable, rare, inimitable.
+- Employees: valuable, not rare, inimitable.
+- Microsoft's ability to develop, deploy, and maintain Azure AD: valuable, rare, inimitable.
+- Organization: Yes, Microsoft is highly organized to fully exploit Azure AD's potential, with substantial resources and a strategic focus.
+
+So in conclusion, Microsoft Azure AD has a sustainable competitive advantage because of its cash on hand, brand, reputation, customer relationships, and the ability to develop, deploy, and maintain Azure AD.
