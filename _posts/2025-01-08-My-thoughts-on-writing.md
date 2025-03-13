@@ -7,7 +7,7 @@ tags: [writing]
 
 I'm an aspiring writer. I write blogs, I've written two chapters in a book and I hope to write books in the future. It's like any other craft that you want to get better at. You put time in, and you get better. The more you write, the better you get.
 
-#### Why do I want to write?
+#### Why I write
 
 Great stories endure long after their authors are gone, offering unique perspectives that only those with similar experiences can truly capture. As an immigrant to the US, I bring a distinctive viewpoint balancing roles as a software engineer, MBA holder, doer, and leader. Growing up in a bustling city, I navigated between my home language and others daily, eventually changing my accent to avoid constant repetition for those who couldn't understand me. Once a restless child frequently in trouble, I learned to channel that energy, developing focus and discipline that built my career. These experiences shape how I see the world, and they're stories I rarely find in literature. If I don't write them, they may never be told. If I don't write, who will? Others might write about us, but they peer in through opaque windows streaked with years of dust and rain. I want to wipe away that dust and paint a clear picture of my world. Perhaps it's useful for others, perhaps not—but these stories deserve to be written.
 
