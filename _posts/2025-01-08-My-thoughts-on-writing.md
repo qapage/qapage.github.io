@@ -11,6 +11,8 @@ I'm an aspiring writer. I write blogs, I've written two chapters in a book and I
 
 Great stories endure long after their authors are gone, offering unique perspectives that only those with similar experiences can truly capture. As an immigrant to the US, I bring a distinctive viewpoint balancing roles as a software engineer, MBA holder, doer, and leader. Growing up in a bustling city, I navigated between my home language and others daily, eventually changing my accent to avoid constant repetition for those who couldn't understand me. Once a restless child frequently in trouble, I learned to channel that energy, developing focus and discipline that built my career. These experiences shape how I see the world, and they're stories I rarely find in literature. If I don't write them, they may never be told. If I don't write, who will? Others might write about us, but they peer in through opaque windows streaked with years of dust and rain. I want to wipe away that dust and paint a clear picture of my world. Perhaps it's useful for others, perhaps not—but these stories deserve to be written.
 
+#### On Writing well
+
 Desire alone isn't enough. Writing well ensures the craft doesn't obscure the story. I've immersed myself in books on writing from authors across genres, absorbing their wisdom. These resources have proven invaluable. In what follows, I'll share the insights I've gained and the techniques I've been practicing as I develop my voice.
 
 #### Write in simple words. Write like you speak. Write like yourself. 
