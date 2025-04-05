@@ -10,11 +10,11 @@ Michael Porter, a professor at Harvard Business School, introduced this model in
 
 #### What is Porter's Five Forces Model?
 Michael Porter's Five Forces Model is a framework for analyzing the competitive forces within an industry. It helps to understand the dynamics of competition and the potential profitability of a market. The model identifies five key forces that shape the competitive landscape: 
-    1. **Threat of New Entrants**: The ease or difficulty with which new competitors can enter the market. High barriers to entry can protect existing companies from new competition, while low barriers can lead to increased competition and reduced profitability. 
-    2. **Bargaining Power of Suppliers**: The power that suppliers have over the prices and terms of supply. If there are few suppliers or if they offer unique products, they can exert significant influence over companies in the industry. 
-    3. **Bargaining Power of Buyers**: The power that customers have to influence prices and terms. If buyers are concentrated or if they can easily switch to alternative products, they can negotiate better deals, impacting profitability. 
-    4. **Threat of Substitute Products or Services**: The likelihood that customers will switch to alternative products or services. High availability of substitutes can limit pricing power and profitability for companies in the industry. 
-    5. **Rivalry Among Existing Competitors**: The intensity of competition among existing players in the market. High rivalry can lead to price wars, increased marketing costs, and reduced profitability.
+1. **Threat of New Entrants**: The ease or difficulty with which new competitors can enter the market. High barriers to entry can protect existing companies from new competition, while low barriers can lead to increased competition and reduced profitability. 
+2. **Bargaining Power of Suppliers**: The power that suppliers have over the prices and terms of supply. If there are few suppliers or if they offer unique products, they can exert significant influence over companies in the industry. 
+3. **Bargaining Power of Buyers**: The power that customers have to influence prices and terms. If buyers are concentrated or if they can easily switch to alternative products, they can negotiate better deals, impacting profitability. 
+4. **Threat of Substitute Products or Services**: The likelihood that customers will switch to alternative products or services. High availability of substitutes can limit pricing power and profitability for companies in the industry. 
+5. **Rivalry Among Existing Competitors**: The intensity of competition among existing players in the market. High rivalry can lead to price wars, increased marketing costs, and reduced profitability.
 
 #### How to Use Porter's Five Forces Model
 1. **Identify the Industry**: Clearly define the industry you want to analyze. This could be a specific market segment or a broader industry category.
