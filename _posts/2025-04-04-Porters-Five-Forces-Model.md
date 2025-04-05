@@ -5,6 +5,8 @@ categories: [Strategy]
 tags: [strategy]
 ---
 
+I heard of the Five Forces model first in 2009, in a Business strategy class I took during my (first) MBA. Since then it has remained on the periphery of my thoughts, knowing that it is useful but not using it often enough for it to be second nature. Now nearly 16 years later as I pursue my second MBA, I find myself in a class reading about the Five Forces model again. I am going to take this opportunity to learn it deeply, apply it to many examples, and write about it in an attempt to deepen my understanding of this model and to make it stick.
+
 #### Introduction
 Michael Porter, a professor at Harvard Business School, introduced this model in his 1979 book "Competitive Strategy: Techniques for Analyzing Industries and Competitors." Since then, it has become a foundational tool for strategic management and business analysis. In the world of business, understanding the competitive landscape is crucial for success. One of the most widely used frameworks for analyzing competition is Michael Porter's Five Forces Model. This model provides a comprehensive view of the forces that shape competition within an industry and helps businesses develop effective strategies to navigate their market environment.
 
