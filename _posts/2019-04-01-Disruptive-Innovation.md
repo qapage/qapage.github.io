@@ -16,6 +16,12 @@ The disruptive process typically follows this pattern:
 * New entrants gradually improve their offerings and move upmarket
 * Eventually, they displace the incumbents
 
+The three core elements of Christensen's theory are:
+
+1. **Performance Trajectories** : The rate at which technology progresses is higher than the demand for technical performance. This means markets are overserved (too advanced, too many features) which leaves a gap between needs and performance, and blank space at the bottom of the market.
+2. **Innovation Types**: Sustaining innovation improves existing products along dimensions that mainstream customers care about, enabling existing players to sell more to their best customers at higher margins and profitability. Disruptive innovation is usually inferior on common product dimensions, but offers a different mix of attributes (eg, simple, convenient, cheap) that appeals to low end customer segments or new customer segments, thus providing a foothold in these segments.
+3. **Organizational inertia**: existing business models constrain established companies from investing in new technologies even if they have the resources and capabilities to do so. Disruption happens because the performance trajectory of innovative disruption happens faster than the performance trajector of sustaining innovations and customers' demand for technological peformance, resulting in falling prices when disruptive innovations become good enough for mainstream customers.
+
 ##### Recommended reading
 Read any of the following books:
 * "The Innovator's Dilemma" by Clayton Christensen
