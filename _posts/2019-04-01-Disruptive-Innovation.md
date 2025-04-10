@@ -2,7 +2,7 @@
 layout: post
 title: Disruptive Innovation
 categories: [Strategy]
-tags: [strategy]
+tags: [strategy, genAI, innovation]
 ---
 
 Disruption is a process by which smaller companies with less resources successfully challenge established businesses. The term was coined by Clayton Christensen in his 1997 book "The Innovator's Dilemma".
@@ -34,6 +34,9 @@ There are several barriers to upward mobility for disruptive innovations, and th
 The distinction between sustaining innovation (improving existing products for current customers) and disruptive innovation (creating new markets with different value propositions) is crucial for strategic decision-making.
 
 Understanding the true nature of disruption matters because it helps companies identify genuine threats and respond appropriately before it's too late. Small competitors on a disruptive trajectory require immediate attention, while those simply operating at the edges may not pose the same level of threat.
+
+##### Most recent example of Disruptive Innovation
+Recently, we saw ChatGPT and friends come onto the market, with the ability to generate text, images and even code. They did not go after the high end users, the professionals and instead targeted an underserved market, the casual user, students and small businesses. Google Search for example, allowed you to get to an answer after combing through many search results and articles. But ChatGPT or Claude, just gave you a direct answer. And you could interact with it like you were talking to a human expert. You could ask follow up questions, seek clarification etc etc. This ease of use allowed users to look past its limitations, and embrace it. That gave GenAI a foothold in this market, that they could then build on. These users awed by what they say, took it to their workplaces, took it their friends and word spread like wildfire. Now OpenAI, Perplexity etc are billion dollar companies and they got there through disruptive innovation.
 
 ##### Recommended reading
 Read any of the following books:
