@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Writing
+title: My thoughts on writing
 categories: [writing]
 tags: [writing]
 ---
