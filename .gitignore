@@ -2,3 +2,10 @@ _site
 .sass-cache
 .jekyll-metadata
 .editorconfig
+.bundle
+.bundle/*
+Gemfile.lock
+test_api.py
+test_api.py.v1
+vendor
+vendor/
