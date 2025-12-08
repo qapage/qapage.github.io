@@ -12,7 +12,10 @@ gem 'github-pages', group: :jekyll_plugins
 
 * gem install bundler
 * bundle install
+* bundle install --path vendor/bundle #in case the previous line fails
 * bundle exec jekyll serve
 =======
+
+Next  time just run `bundle exec jekyll serve`, and you should have a local instance running
 
         ## For all things Software Leadership related.
