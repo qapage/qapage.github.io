@@ -18,5 +18,6 @@ My journey across various stages of the software lifecycle—from startups to en
 #### What Lies Ahead
 In the coming posts, I'll share practical insights drawn from these experiences—not abstract theories, but battle-tested approaches that have proven effective across diverse environments. These perspectives aim to serve both technical leaders making strategic decisions and practitioners implementing solutions on the ground.
 Whether you're designing critical infrastructure or building consumer applications, the principles of reliability engineering offer a framework for creating software that users can genuinely depend on—even when things inevitably go wrong.
+I will also use this blog to document my learning about AI, and how I apply that to the pursuit of reliability. AI is like any other tool, and its quite a capable tool. We all need to play it with, learn what it can do well, and what it can't. Having that knowledge and being able to add this tool to our toolbelt, makes us better builders.
 
 More about me at [Deepak](https://www.linkedin.com/in/deepakbhaskaran/)
