@@ -8,16 +8,29 @@ summary: "About this blog"
 active: about
 ---
 
-### The Critical Pursuit of Software Reliability
-In today's digital landscape, software permeates every aspect of our lives, yet truly reliable software remains elusive. When a single bug can ground fleets of aircraft, disrupt medication dispensing systems, or freeze financial markets, the consequences of failure have never been more severe.
+Hello All! You've come to onsitereliability.com, where I write about things at the intersection of security, resilience and organizational leadership. My day job is in Engineering, where I am in charge of a reliability and security for a SaaS service that handles billions of requests a month. 
 
-#### The Reality of Reliability
-Creating dependable software isn't about achieving perfect uptime—it's about designing systems that degrade gracefully under stress and recover swiftly after failure. True reliability comes from anticipating problems rather than simply reacting to them.
-My journey across various stages of the software lifecycle—from startups to enterprises, from development to operations—has taught me valuable lessons about building systems that withstand the pressures of real-world deployment. Each organization faced distinct challenges, served different users, and operated under unique constraints, yet certain reliability principles remained constant.
+### What You'll Find Here
 
-#### What Lies Ahead
-In the coming posts, I'll share practical insights drawn from these experiences—not abstract theories, but battle-tested approaches that have proven effective across diverse environments. These perspectives aim to serve both technical leaders making strategic decisions and practitioners implementing solutions on the ground.
-Whether you're designing critical infrastructure or building consumer applications, the principles of reliability engineering offer a framework for creating software that users can genuinely depend on—even when things inevitably go wrong.
-I will also use this blog to document my learning about AI, and how I apply that to the pursuit of reliability. AI is like any other tool, and its quite a capable tool. We all need to play it with, learn what it can do well, and what it can't. Having that knowledge and being able to add this tool to our toolbelt, makes us better builders.
+My writing spans three interconnected themes:
 
-More about me at [Deepak](https://www.linkedin.com/in/deepakbhaskaran/)
+#### Technical Depth
+From API testing and automation frameworks to emerging technologies like LangChain and Model Context Protocol, I dive into the tools and practices that power modern software. Whether it's Windows automation, Linux command mastery, or cloud infrastructure, I believe in understanding systems deeply.
+
+#### Security & Resilience
+As threats evolve, so must our defenses. I write about non-human identities, ransomware awareness, vendor risk, and the operational strategies that keep organizations secure and resilient. Security isn't just technical—it's organizational.
+
+#### Leadership & Strategy
+Great products and secure systems don't emerge from technology alone. I explore leadership principles (handling difficult conversations, positive deviance), business strategy frameworks (Porter's Five Forces, Jobs to Be Done, disruptive innovation), and the often-overlooked human elements of building high-performing teams.
+
+### Why This Blend?
+
+Throughout my career, I've discovered that the most impactful solutions live at the intersection of **technical excellence**, **security thinking**, and **organizational acumen**. A perfectly architected system fails without good leadership. A strong team stumbles without understanding strategy. A secure infrastructure collapses if people don't understand the "why."
+
+### Recent Focus Areas
+
+My recent posts reflect a shift toward business acumen and strategic thinking—exploring SaaS terminology, organizational resilience, business frameworks, and AI-assisted development. But I haven't abandoned my technical roots. I still believe that good technologists make better leaders, and good leaders understand technology.
+
+---
+
+**Learn more:** [Deepak on LinkedIn](https://www.linkedin.com/in/deepakbhaskaran/)
