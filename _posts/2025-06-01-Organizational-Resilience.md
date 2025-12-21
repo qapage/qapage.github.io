@@ -5,7 +5,7 @@ categories: [Resilience]
 tags: [Resilience]
 ---
 
-##### Introduction
+## Introduction
 
 <em> Resilience is the ability to effectively respond to unexpected setbacks, and continue functioning. </em>
 
@@ -17,7 +17,9 @@ Reslience as we know it now, is focussed on safety management on helping people 
 
 One measure of reslience is the ability to create foresight - to anticipate the changing shape of risk, before failure and harm occurs.
 
-#### How do we apply Resilience thinking to organizations? 
+---
+
+## How do we apply Resilience thinking to organizations? 
 Weick (1993) did a study of the Mann Gulch fire disaster and in his study identified four sources of resilience: 
 1. improvisation and bricolage, 
 2. virtual role systems, 
@@ -32,19 +34,21 @@ Stephanie Duchek in 2019, published 'Organizational Resilience: a capability bas
 
 These stages have their own unique underlying capabilities that together form Organizational Resilience. I'm going to document my learning from this paper, as I read through it in detail. I hope you find this useful.
 
-#### Capabilities tied to Organizational Resilience
+---
+
+## Capabilities tied to Organizational Resilience
 
 The underlying capabilities tied to Organizational Resilience can be categorized as below,
 
-1. Anticipation capabilities
-* Observation and identification
-* Preparation
-2. Coping capabilities
-* Accepting
-* Developing and implementing solutions
-3. Adaptation capabilities
-* Reflection and learning
-* Organizational change
+1. **Anticipation capabilities**
+	- Observation and identification
+	- Preparation
+2. **Coping capabilities**
+	- Accepting
+	- Developing and implementing solutions
+3. **Adaptation capabilities**
+	- Reflection and learning
+	- Organizational change
 
 Anticipation is the ability to detect critical developments within the firm or in its environment and to adapt proactively. This does not mean every crisis or failure can be prevented, rather it means that some organizations are able to see the unexpected faster and are able to react to it immediately. Organizations must be able to recognize early signals of crisis to respond quickly, and through that response, avoid escalation. These capabilities look different for diferent firms, in different industries but having them in place helps firms see and react to change before their full impact becomes visible. Preparation includes failure prevention, building and testing recovery plans, business continuity management etc. Training and fire drills can help too. The biggest benefit of these exercises is the growing of effective relationships and mutual understanding among those involved in the plan preparation process. They expand general knowledge and technical skills, and general command over resources that can then be called in, on times of emergency.
 
@@ -54,6 +58,8 @@ Adaptation refers to the ability to adopt to critical situations, and to change 
 
 As you might have guessed already, these stages (Anticipation, Coping and Adaption) are not seperate or linear phases but are quite overlapping, and dependent on each other. Anticipation and Coping are closely tied. You need to detect things quickly, so you can act on them. And you need to act on them well. When you don't cope well, you might fail and that gives you the opportunity to learn from that failure. Likewise, if you cope successfully, you have an opportunity to learn from success, and recognize what works. Without learning, you will not know what to look for, or how to respond correctly.
 
-#### Summary
+---
+
+## Summary
 
 In summary, organizational resilience is not a static trait but a dynamic capability built through continuous learning, preparation, and adaptation. By cultivating anticipation, coping, and adaptation capabilities, organizations can better navigate complexity, uncertainty, and crisis. Resilience thinking shifts the focus from preventing failure to building the capacity to respond effectively and learn from both success and setbacks. It emphasizes that safety and stability emerge from people’s ability to sense, act, and evolve in the face of change—making resilience an essential part of modern organizational strategy.
