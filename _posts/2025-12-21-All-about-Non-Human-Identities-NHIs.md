@@ -1,13 +1,13 @@
 ---
 layout: post
-title: All you need to know about Non-Human Indentities (NHIs)
+title: Lets talk about Non-Human Identities (NHIs)
 categories: [NHI, Security]
 tags: [NHI, Security]
 ---
 
 ## Introduction
 
-**Non-Human Identity** is any digital identity that is used by something that is not a person but still needs to login or get access. Any entity that needs to:
+**Non-Human Identity** is any digital identity that is used by something that is not a person but still needs to log in or get access. Any entity that needs to:
 
 - Talk to an API
 - Connect to a database
@@ -32,11 +32,11 @@ Examples of NHIs include:
 
 ## Why do NHIs matter?
 
-In the average organization, there are **thousands of non-human identities**, sometimes more than human identities. Some [studies](https://astrix.security/learn/blog/what-are-non-human-identities-and-why-theyre-your-biggest-blindspot/) found that NHIs sometimes **outnumbered human identities ten to one**.
+In most organizations there are thouands of NHIs, often more than human identities. Some studies have found that NHIs can outnumber human identities by 10:1. 
 
-With the use of NHIs becoming so widespread, it warrants an increased level of attention devoted to setting them up right and managing them.
+Because NHIs are so widespread (and growing), they deserve the same level of rigor as human identity security—both in how they are created and how they are managed over time.
 
-### The Problem
+#### Common Gaps:
 
 NHIs often have:
 
@@ -44,11 +44,11 @@ NHIs often have:
 - **Poor visibility**
 - **No central inventory** - information is spread across code, config files, cloud management consoles, and vendor-specific admin consoles
 - **Unclear ownership**
-- **No annual review** of what's still needed or what needs to change
+- **No periodic review** of what's still needed or what needs to change
 
-### The Risk
+### Why attackers care
 
-Given all of these aspects, NHIs are some of the most fruitful pursuits for attackers. Once you get in, you could potentially gain **long-lived, powerful, and unaudited access** to key resources inside an organization.
+These gaps make NHIs attractive targets. If an attacker compromises an NHI, they can potentially gain long-lived, privileged, and under-monitored access to critical resources inside an organization.
 
 ---
 
@@ -56,20 +56,20 @@ Given all of these aspects, NHIs are some of the most fruitful pursuits for atta
 
 **Key Principle:** Think of NHIs as no different from humans and manage them similarly.
 
-In general:
+At a high level:
 
-1. **Inventory** — Create and maintain an inventory of NHIs
-2. **Ownership** — Who owns which NHI?
-3. **Purpose** — What is the scope and responsibility of each NHI?
-4. **Least Privilege** — What is the least amount of access needed for each NHI to meet its purpose?
-5. **Short-lived Access** — What is the shortest amount of access time we can give this NHI and still have it be useful?
-6. **Lifecycle** — Create a process and system for how you onboard, change, and retire NHIs on a regular basis
+1. **Inventory** — Create and maintain an inventory of NHIs.
+2. **Ownership** — Make it clear who owns which NHI.
+3. **Purpose** — Define the scope and responsibility of each NHI.
+4. **Least Privilege** — Grant the least amount of access needed to fulfill that purpose.
+5. **Short-lived credentials** — Minimize credential lifetime and automate rotation. 
+6. **Lifecycle** — Standardize how you create, change, and retire NHIs.
 
-Let's look at each of these sections in a little bit more detail.
+Below is a bit more detail on each.
 
 ### Inventory of NHIs
 
-We need to know what NHIs exist before we can set out to manage them. So this is the first step.
+You need to know what exists before you can manage it.
 
 **Goal:** Create a map of every non-human identity and credential in your environment.
 
@@ -97,27 +97,27 @@ Every NHI needs an owner, ideally a team with a business and technical owner. Th
 
 Every NHI should have a **clear reason for existence** that is well documented, including what critical systems it interacts with.
 
-This kind of documentation serves as input to Least Privilege modelling. Publications from prominent vendors in the field say that a lot of NHI risk can be attributed to **over-privileged, general purpose accounts** that do everything. This may be due to shortcuts taken at setup time, to make it easier to get started with these NHIs.
+This documentation serves as input to least-privilege design. A major source of NHI risk is over-privileged, general-purpose accounts that can “do everything,” often due to shortcuts taken during initial setup.
 
 #### Practical steps to take:
 
-- Make "write one-line purpose" **mandatory** in the pipeline or form that creates NHIs
-- Prefer narrow, task-specific identities over a few mega-accounts that do everything
-- During reviews, kill or quarantine any NHI whose purpose nobody can explain
+- Make "a one-line purpose" **mandatory** in the pipeline or form that creates NHIs.
+- Prefer narrow, task-specific identities over mega-accounts.
+- During reviews, quarantine or retire any NHI whose purpose cannot be explained.
 
 ### Least Privileged Access
-
-Give NHIs **just enough access** needed to perform their purpose and nothing more. Ideally you have role-based access or policy-based access for NHIs just like you have for humans.
+Give NHIs only the access required to perform their purpose—nothing more. Use role-based or policy-based access for NHIs just as you do for humans.
 
 #### Practical steps to take:
 
-- Setup regular reporting that shows you **high-risk NHIs** that have:
-  - Privileged access
-  - Long-lived credentials
-  - Are reachable from the internet
-- Block creation of new NHIs with `*` or global admin rights unless they go through a special approval flowit interacts with.
+Run regular reporting for high-risk NHIs that have:
+- Privileged access
+- Long-lived credentials
+- Internet reachability
 
-### Short-Lived Access
+Block creation of new NHIs with `*` or global admin permissions unless they go through an explicit approval flow.
+
+### Short-Lived Credentials
 
 Minimize the window in which a stolen credential is useful. Many NHI breaches have at their core, static, long-lived secrets:
 
@@ -142,7 +142,7 @@ Most frameworks and vendors now push toward **short-lived tokens** and **automat
 
 ### Lifecycle of NHIs
 
-Take your join/move/lifecycle processes and tooling and apply them to NHIs. Why give NHIs an exception?
+Take your join/move/lifecycle processes and tooling and apply them to NHIs. There's no reason for an exception.
 
 #### Creating a new NHI
 
@@ -161,9 +161,9 @@ When the app or workflow changes, the NHI's permissions and purpose should be up
 
 When you retire an NHI (triggered by the service being retired, project ending, or being replaced with a new identity pattern, etc.), you would:
 
-1. Revoke keys/tokens/roles
-2. Delete or disable the identity
-3. Clean up any remaining dependencies
+- Revoke keys/tokens/roles
+- Delete or disable the identity
+- Clean up any remaining dependencies
 
 #### Practical steps to take:
 
