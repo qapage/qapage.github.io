@@ -25,6 +25,7 @@ Weick (1993) did a study of the Mann Gulch fire disaster and in his study identi
 2. virtual role systems, 
 3. an attitude of wisdow and 
 4. respectful interaction. 
+
 Weick argues that these principles facilitate collective sensemaking and thus, help avoid dramatic consequences from unexpected events. A lot of research in following years was based on Weick's model. 
 
 Stephanie Duchek in 2019, published 'Organizational Resilience: a capability based conceptualization', that builds on Weick's model. Stephanie suggests three stages to building resilience: 
