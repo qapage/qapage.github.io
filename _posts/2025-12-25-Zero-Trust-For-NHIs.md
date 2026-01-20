@@ -10,13 +10,15 @@ ZeroTrust principles are generally applied to human identities in the cybersecur
 
 The core principle of Zero Trust is, "Never trust, always verify".
 
-NHIs violate this in so many ways. NHIs are,
+NHIs (Non Human Identities) violate this in so many ways. NHIs are,
 
 - not very visible, so are hard to verify at the point of the request
 - often have long lived access, and inherit trust, long lived trust.
 - often do not follow the principle of Least Privileged Access
 
 These properties that are often true for NHIs make them problematic.
+
+To read more about NHIs, please see this [article](https://onsitereliability.com/All-about-Non-Human-Identities-NHIs/)
 
 ## Zero Trust Principles and applying them to NHIs
 
