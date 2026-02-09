@@ -32,17 +32,15 @@ In his opinion, here's the full list of things that make SRE, SRE:
 - Mandatory, blameless postmortems
 
 ## Why Reliability matters
-Reliability is easy to ignore because its absence is only visible during failure. By the time users are complaining, multiple systemic issues have already accumulated. SRE exists to make those risks visible before they become outages.
+Reliability is easy to ignore because its absence is only visible during failure. By the time users are complaining, multiple systemic issues have already accumulated and the organization is reacting too late. SRE exists to make reliability risk visible before it turns into outages.
 
-**SRE does not attempt to launch risk, or avoid all outages, or set release policy.**
+Importantly, SRE does not try to eliminate all risk, prevent every outage, or dictate release policy. Instead, it provides a mechanism to manage tradeoffs explicitly. That mechanism is the error budget.
 
-Error budgets are the core mechanism that aligns development speed with reliability. Once an SLA is defined, the error budget becomes the objective signal that determines whether a service can continue releasing or must pause to stabilize.
+Error budgets align development velocity with reliability using objective signals. The process starts with the business defining an SLA: what availability or performance guarantees does the service make to its users? From that SLA, an error budget naturally follows. For example, a 99.99% SLA implies a 0.01% error budget—the amount of unreliability the service is allowed over a given period.
 
-SRE sets Error budgets. But to have Error budgets, you need SLAs. The first step is for the business to have an SLA for the service. What guarantees does the service make to its users, about the service? Once you have an SLA, you can back into the Error budget. If your SLA is 99.99%, your Error budget is 0.01%.
+That error budget becomes the governing factor for releases. If the service is meeting its SLA and has remaining error budget, teams are free to release as often as they like. If reliability has slipped and the error budget is exhausted, releases pause until stability is restored and budget is earned back. There are no arbitrary freeze windows, personal gatekeepers, or subjective debates. The system’s observed reliability determines the pace of change.
 
-Your Error budget can be used during releases, and any particular issues you cause during releases. So, there are no artificial restrictions on when you can release and when you cannot. The actual restrictions are tied to SLO's. If your service has met SLA and has not consumed its Error budget, feel free to release. If you've had service issues, slipped the SLA or used up your Error budget already, hold the release until you've earned enough error budget. No need to fight, no egos to deal with, no gatekeepers stopping you just because they don't like you etc. Your service's reliability decides when and how frequently you release.
-
-This brings both dev and the SRE on the same side, wanting to release faster, with safety and reliability. This reduces a lot of friction between the dev and the sre teams. Dev teams monitor and self regulate, as they know what is being measured and what can get in the way of their ability to release.
+This model puts development and SRE on the same side. Both want to ship faster and stay within the error budget. Because the rules are clear and measurable, teams can monitor themselves, understand the consequences of their changes, and adjust behavior without constant negotiation. Reliability stops being a source of friction and becomes a shared, data-driven constraint.
 
 ## Staffing, Work, Ops Overload 
 In the worst possible case, you throw people at a badly functioning system, and keep it alive via manual labor. This is a tough job for anyone to be in.
