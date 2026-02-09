@@ -131,16 +131,6 @@ The best companies treat SRE as an evolving function, as continuously refactorab
 
 ### Practical guidance (the synthesis)
 
-**Most successful large non-FAANG companies land here:**
+Most successful large non-FAANG companies converge on a hybrid model rather than copying any single company wholesale. They adopt Google-like SRE principles—clear SLOs, error budgets, and explicit limits on toil—to make reliability measurable and governable. They use Meta-like embedding, aligning reliability engineers closely with product teams so reliability improvements stay near the code and development velocity remains high. And they enforce Netflix-like ownership, ensuring that product teams remain accountable for running what they ship, rather than outsourcing reliability to a separate group.
 
-*Google-like SRE principles*
-SLOs, error budgets, toil limits
-
-*Meta-like embedding*
-Reliability engineers aligned to product areas
-
-*Netflix-like ownership*
-Dev teams stay accountable for production
-
-**The common thread: reliability is engineered, not outsourced.**
-Most companies succeed with Google’s principles, Meta’s embedding model, and Netflix’s ownership mindset — but only when adapted to their scale, risk profile, and talent mix.
+The common thread across these approaches is simple but non-negotiable: reliability is engineered, not outsourced. Organizations succeed when they combine strong reliability mechanisms with clear ownership and adapt these ideas to their own scale, risk tolerance, and talent mix—rather than trying to copy any one model verbatim.
