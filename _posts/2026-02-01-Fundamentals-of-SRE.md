@@ -7,8 +7,7 @@ tags: [SRE]
 
 ## Go to the source
 
-*Site Reliability Engineering is what happens when you ask a software engineer to design an operations function.*
-- Benjamin Treynor Sloss
+*Site Reliability Engineering is what happens when you ask a software engineer to design an operations function.*, Benjamin Treynor Sloss
 
 Sloss coined the term while running Production Engineering at Google. In his SREcon 2014 talk, Keys to SRE, he lays out the principles that still define SRE today. This article distills those ideas and connects them to how modern companies organize reliability.
 
