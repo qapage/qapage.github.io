@@ -72,10 +72,10 @@ The SRE Benediction: *May the Queries flow, And may the Pagers Remain Silent*.
 If I had to summarize what I hear Sloss say in that talk, here's that short list.
 
 - **Engineer reliability:** Treat operational problems as software problems.
-- **Automate toil away:** Manual, repetitive work is a signal — not a job description.
+- **Automate toil away:** Manual, repetitive work is a signal not a job description.
 - **Balance tradeoffs:** Use SLOs and error budgets to balance feature velocity with reliability.
 - **Scale sustainably:** SRE scales people and systems through tooling and engineering.
-- **Focus on principles:** SRE is a long-term philosophy — not just a team name.
+- **Focus on principles:** SRE is a long-term philosophy not just a team name.
 
 There are other aspects of SRE that are worth thinking about as well. 
 
