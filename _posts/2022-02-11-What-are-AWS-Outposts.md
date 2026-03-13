@@ -2,7 +2,7 @@
 layout: post
 title: What are AWS Outposts?
 categories: [AWS]
-tags: [AWS]
+tags: [architecture]
 ---
 
 #### Introduction

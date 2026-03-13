@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Ansible and Windows
 categories: [automation]
-tags: [automation]
+tags: [testing]
 ---
 
 #### What is the problem we're trying to solve?

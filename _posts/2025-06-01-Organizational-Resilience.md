@@ -2,7 +2,7 @@
 layout: post
 title: Organizational Resilence
 categories: [Resilience]
-tags: [Resilience]
+tags: [architecture]
 ---
 
 ## Introduction

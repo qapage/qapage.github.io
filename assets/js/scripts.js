@@ -8,13 +8,16 @@
   var images = document.querySelectorAll('a img');
   var imageHeight = window.innerHeight - 20;
 
+  /* functions */
+  setDate();
+
+  if (!shadow) return;
+
   /* events */
   shadow.addEventListener('click', resetShadow, false);
   window.addEventListener('keydown', resetStyles, false);
   window.addEventListener('resize', refreshImageSizes, false);
 
-  /* functions */
-  setDate();
   toggleImages();
 
 
@@ -83,24 +86,3 @@
 })();
 
 
-/*
-* Aside Resize
-* ========================================================================== */
-
-(function() {
-  var aside = document.querySelector('.sidebar');
-  var mainContainer = document.querySelectorAll('.content-wrapper');
-  var switcher = document.getElementById('switcher');
-
-  switcher.addEventListener('click', slide, false);
-
-
-  function slide() {
-    aside.classList.add('transition-divs');
-    aside.classList.toggle('aside-left');
-    [].forEach.call(mainContainer, function(c) {
-      c.classList.add('transition-divs');
-      c.classList.toggle('centering');
-    });
-  }
-})();

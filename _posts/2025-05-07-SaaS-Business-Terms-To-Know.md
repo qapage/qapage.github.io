@@ -2,7 +2,7 @@
 layout: post
 title: SaaS Business Terms to Know
 categories: [SaaS]
-tags: [SaaS]
+tags: [strategy]
 ---
 
 ##### Introduction

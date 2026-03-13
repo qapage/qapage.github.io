@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Data comparison between csv files
+categories: [data]
+tags: [testing]
 ---
 
 #### Data comparison between csv files

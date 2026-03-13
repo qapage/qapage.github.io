@@ -1,20 +1,20 @@
-<header class="main-header content-wrapper">
-
-  <input type="checkbox" id="menu-checkbox" />
-
+<header class="main-header">
   <nav class="center-wrapper nav-main">
-
     <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
-    {% for my_page in site.pages %}
-      {% if my_page.active %}
-        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      {% endif %}
-    {% endfor %}
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('.nav-main').classList.toggle('nav-open')">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
 
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-
-    <label for="menu-checkbox" class="toggle-button" data-open="☰" data-close="☰" onclick></label>
+    <div class="nav-links">
+      {% for my_page in site.pages %}
+        {% if my_page.active %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% endif %}
+      {% endfor %}
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+    </div>
   </nav>
-
 </header>

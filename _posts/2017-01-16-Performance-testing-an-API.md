@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Performance testing an API
-categories: [csv, data]
-tags: [csv]
+categories: [testing, performance]
+tags: [testing]
 ---
 
 ### APIs are everywhere!

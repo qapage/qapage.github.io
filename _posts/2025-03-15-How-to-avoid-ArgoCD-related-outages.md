@@ -2,7 +2,7 @@
 layout: post
 title: How to Avoid ArgoCD-Related Outages
 categories: [AWS, ArgoCD]
-tags: [AWS, ArgoCD]
+tags: [architecture]
 ---
 
 #### Executive Summary: Avoiding ArgoCD-Related Outages

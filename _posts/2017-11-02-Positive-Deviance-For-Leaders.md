@@ -2,7 +2,7 @@
 layout: post
 title: Positive Deviance for Leaders
 categories: [Leadership]
-tags: [leadership]
+tags: [management]
 ---
 
 #### What is Positive Deviance?

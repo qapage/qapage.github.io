@@ -2,7 +2,7 @@
 layout: post
 title: Zero Trust for NHIs
 categories: [NHI, Security, ZeroTrust]
-tags: [NHI, Security, ZeroTrust]
+tags: [security]
 ---
 
 ## Introduction

@@ -2,7 +2,7 @@
 layout: post
 title: The Jobs to be done Framework
 categories: [Strategy]
-tags: [strategy, innovation, jobs-to-be-done]
+tags: [strategy]
 ---
 
 ##### The Jobs to be done Framework

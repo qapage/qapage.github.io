@@ -2,7 +2,7 @@
 layout: post
 title: Kurt Vonnegut On Writing
 categories: [writing]
-tags: [writing, vonnegut]
+tags: [writing]
 ---
 
 Kurt Vonnegut was a prolific writer, and his advice on writing is some of the best you'll find. Here are some of his best tips:

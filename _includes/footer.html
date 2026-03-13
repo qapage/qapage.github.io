@@ -1,4 +1,22 @@
 <footer class="blog-footer content-wrapper">
-  <p>&copy; <span class="full-year"></span> {{ site.title }}</p>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <p class="footer-brand">{{ site.title }}</p>
+      <p class="footer-desc">{{ site.description }}</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Links</p>
+      <a href="/posts/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/feed.xml">RSS Feed</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Connect</p>
+      <a href="https://www.linkedin.com/in/deepakbhaskaran/">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span class="full-year"></span> {{ site.title }}</p>
+  </div>
 </footer>
 <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>

@@ -2,7 +2,7 @@
 layout: post
 title: Benchmarking, the Whats and the Whys!
 categories: [testing, performance]
-tags: [testing, performance]
+tags: [testing]
 ---
 
 TLDR; A benchmark is way to create a point of reference that you can

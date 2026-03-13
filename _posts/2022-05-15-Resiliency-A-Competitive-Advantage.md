@@ -2,7 +2,7 @@
 layout: post
 title: Building Resiliency, A true competitive advantage
 categories: [resiliency]
-tags: [resiliency]
+tags: [architecture]
 ---
 
 TLDR; Resiliency is the capacity to recover quickly from difficulties; 

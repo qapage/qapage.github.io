@@ -2,7 +2,7 @@
 layout: post
 title: Automating Windows VM creation
 categories: [automation]
-tags: [automation]
+tags: [testing]
 ---
 
 #### What's the use case?

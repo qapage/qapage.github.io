@@ -2,7 +2,7 @@
 layout: post
 title: Testing an API with Python
 categories: [API, testing]
-tags: [API]
+tags: [testing]
 ---
 
 #### Lets get started

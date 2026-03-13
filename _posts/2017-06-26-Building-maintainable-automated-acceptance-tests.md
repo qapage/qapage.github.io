@@ -2,7 +2,7 @@
 layout: post
 title: Building maintainable automated acceptance tests
 categories: [automation]
-tags: [automation]
+tags: [testing]
 ---
 
 #### What are acceptance tests?

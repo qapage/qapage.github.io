@@ -2,7 +2,7 @@
 layout: post
 title: Disruptive Innovation
 categories: [Strategy]
-tags: [strategy, genAI, innovation]
+tags: [strategy]
 ---
 
 Disruption is a process by which smaller companies with less resources successfully challenge established businesses. The term was coined by Clayton Christensen in his 1997 book "The Innovator's Dilemma".

@@ -2,7 +2,7 @@
 layout: post
 title: Handling Difficult Conversations
 categories: [Leadership]
-tags: [leadership]
+tags: [management]
 ---
 
 #### The Crucial Conversations framework for handling difficult conversations
