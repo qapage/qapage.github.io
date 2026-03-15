@@ -67,7 +67,7 @@ First, set up the environment. These steps create a Python virtualenv for you to
 pip install virtualenv
 virtualenv perftest
 source perftest/bin/activate
-pip install locustio
+pip install locust
 ```
 
 Then, copy the Python code from earlier in this article to `locustfile.py` and start Locust:
