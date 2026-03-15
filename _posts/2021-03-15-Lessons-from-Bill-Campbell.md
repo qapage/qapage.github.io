@@ -88,3 +88,7 @@ In his closing, Campbell distills everything to its essence: "You care deeply ab
 When Eric Schmidt, Jonathan Rosenberg, and Alan Eagle interviewed over 80 people for their book *Trillion Dollar Coach*, one word came up in nearly every conversation: love. How much they loved Bill, how much Bill loved them. He treated people as whole human beings — professional, personal, family, all of it — not just as workers filling a role. He had a habit of taking five minutes after a big milestone to recognize the junior person who actually did the work. It cost him almost nothing and meant everything to the people on the receiving end.
 
 That is the whole philosophy. Build environments where talented people can do their best work. Focus relentlessly on the product. Care about the people around you as human beings, not just as contributors. Everything else, the strategy, the process, the org chart, exists in service of those things. It is a simple idea, and like most simple ideas, it is extraordinarily hard to execute. But if you get it right, Campbell argues, everything else follows.
+
+#### Recommended Reading
+
+- [Ten Lessons from Bill Campbell](https://medium.com/@ddubinsky/ten-lessons-from-bill-campbell-660333d6feda) — Donna Dubinsky
