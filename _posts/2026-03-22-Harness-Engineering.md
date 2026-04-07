@@ -2,7 +2,7 @@
 layout: post
 title: Harness Engineering
 categories: [Engineering]
-tags: [AI, Codex, Agents, Software Delivery]
+tags: [AI, Software Delivery]
 ---
 
 ## What is Harness Engineering?
