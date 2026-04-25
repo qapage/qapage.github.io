@@ -7,7 +7,7 @@ tags: [AI, management]
 
 Operational knowledge about complex systems lives across dozens of chat threads, ticketing systems, wikis, and people's heads. When a question comes up ("Which customers were affected by recent incidents?"), answering it requires searching multiple systems and reconstructing context from scratch every time. The information exists, but it is scattered and unstructured, which means it might as well not exist when you need it fast.
 
-We built a file-based knowledge management system using Claude Code's persistent memory to solve this problem. The system stores knowledge as individual Markdown files with structured YAML frontmatter. Each file represents one discrete unit of knowledge: an incident, a service architecture, a customer relationship, or operational feedback. The approach is simple, but the structure is what makes it work.
+I built a file-based knowledge management system using Claude Code's persistent memory to solve this problem. The system stores knowledge as individual Markdown files with structured YAML frontmatter. Each file represents one discrete unit of knowledge: an incident, a service architecture, a customer relationship, or operational feedback. The approach is simple, but the structure is what makes it work.
 
 #### How a Memory File Is Structured
 
