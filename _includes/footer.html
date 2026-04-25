@@ -1,22 +1,35 @@
-<footer class="blog-footer content-wrapper">
-  <div class="footer-inner">
-    <div class="footer-col">
-      <p class="footer-brand">{{ site.title }}</p>
-      <p class="footer-desc">{{ site.description }}</p>
+<footer style="border-top:1px solid var(--border);background:var(--bg2)">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <div>
+        <span class="font-display text-lg" style="font-weight:600;letter-spacing:-.04em;color:#e6f5ec;">{{ site.title | split: '.' | first }}<span style="color:#22c55e;">.com</span></span>
+        <p class="mt-3 text-sm" style="color:var(--t3);line-height:1.6">{{ site.description }}</p>
+      </div>
+      <div>
+        <div class="mono text-xs mb-3" style="color:var(--t3);letter-spacing:.1em">SECTIONS</div>
+        <div class="space-y-2 text-sm" style="color:var(--t2)">
+          <a href="{{ site.baseurl }}/posts/" class="block hover:text-white transition-colors" style="text-decoration:none;">Articles</a>
+          <a href="{{ site.baseurl }}/about/" class="block hover:text-white transition-colors" style="text-decoration:none;">About</a>
+          <a href="{{ site.baseurl }}/feed.xml" class="block hover:text-white transition-colors" style="text-decoration:none;">RSS Feed</a>
+        </div>
+      </div>
+      <div>
+        <div class="mono text-xs mb-3" style="color:var(--t3);letter-spacing:.1em">CONNECT</div>
+        <div class="space-y-2 text-sm" style="color:var(--t2)">
+          <a href="https://www.linkedin.com/in/deepakbhaskaran/" class="block hover:text-white transition-colors" style="text-decoration:none;">LinkedIn</a>
+        </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <p class="footer-heading">Links</p>
-      <a href="/posts/">Blog</a>
-      <a href="/about/">About</a>
-      <a href="/feed.xml">RSS Feed</a>
+    <div class="greek-key mb-8"></div>
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="mono text-xs" style="color:var(--t3)">&copy; <span class="full-year"></span> {{ site.title }}. All rights reserved.</div>
+      <div class="mono text-xs cursor" style="color:var(--t3)">reliability engineering</div>
     </div>
-    <div class="footer-col">
-      <p class="footer-heading">Connect</p>
-      <a href="https://www.linkedin.com/in/deepakbhaskaran/">LinkedIn</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; <span class="full-year"></span> {{ site.title }}</p>
   </div>
 </footer>
-<script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+<script>
+(function() {
+  var y = document.querySelector('.full-year');
+  if (y) y.textContent = new Date().getFullYear();
+})();
+</script>

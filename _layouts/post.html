@@ -5,52 +5,91 @@ layout: default
 {% assign minutes = words | divided_by: 250 %}
 {% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
 
-<article class="post">
+<section class="max-w-6xl mx-auto px-6 py-12">
+  <div class="grid lg:grid-cols-[1fr_260px] gap-16">
 
-  <h1 class="post-title">{{ page.title }}</h1>
+    <article>
+      <div class="section-tag mb-6">// ARTICLE.READ</div>
 
-  <div class="post-meta">
-    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-    <span class="post-meta__sep">&middot;</span>
-    <span>{{ minutes }} min read</span>
-    {% if page.author %}
-      <span class="post-meta__sep">&middot;</span>
-      <span>{{ page.author }}</span>
-    {% endif %}
-  </div>
-
-  {% if page.tags.size > 0 %}
-    <div class="post-tags">
-      {% for tag in page.tags %}
-        <a href="/posts/" class="tag-badge">{{ tag }}</a>
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  <div class="post-content">
-
-    {{ content }}
-
-    <nav class="post-nav">
-      {% if page.previous.url %}
-        <a class="post-nav__link post-nav__link--prev" href="{{ page.previous.url }}">
-          <span class="post-nav__label">&larr; Previous</span>
-          <span class="post-nav__title">{{ page.previous.title }}</span>
-        </a>
-      {% else %}
-        <span class="post-nav__link"></span>
+      {% if page.tags.size > 0 %}
+        <div class="flex items-center gap-3 mb-6 flex-wrap">
+          {% for tag in page.tags %}
+            <span class="badge badge-green">{{ tag | upcase }}</span>
+          {% endfor %}
+        </div>
       {% endif %}
 
-      {% if page.next.url %}
-        <a class="post-nav__link post-nav__link--next" href="{{ page.next.url }}">
-          <span class="post-nav__label">Next &rarr;</span>
-          <span class="post-nav__title">{{ page.next.title }}</span>
-        </a>
-      {% else %}
-        <span class="post-nav__link"></span>
+      <h1 class="hl text-4xl md:text-5xl mb-6" style="line-height:0.95">
+        {{ page.title }}
+      </h1>
+
+      <div class="flex items-center gap-4 mb-10" style="border-bottom:1px solid var(--border);padding-bottom:20px">
+        <div class="avatar">DB</div>
+        <div>
+          <div class="text-sm" style="color:var(--t1)">{% if page.author %}{{ page.author }}{% else %}Deepak Bhaskaran{% endif %}</div>
+          <div class="mono text-xs" style="color:var(--t3)">{{ page.date | date: "%B %-d, %Y" }} &middot; {{ minutes }} min read</div>
+        </div>
+      </div>
+
+      <div class="article-body">
+        {{ content }}
+      </div>
+
+      {% if page.tags.size > 0 %}
+        <div class="flex flex-wrap gap-2 mt-10 pt-8" style="border-top:1px solid var(--border)">
+          {% for tag in page.tags %}
+            <a href="/posts/" class="tag" style="text-decoration:none;">{{ tag }}</a>
+          {% endfor %}
+        </div>
       {% endif %}
-    </nav>
+
+      <nav class="flex gap-4 mt-10 pt-8" style="border-top:1px solid var(--border)">
+        {% if page.previous.url %}
+          <a class="glass rounded-xl p-5 flex-1 block" href="{{ page.previous.url }}" style="text-decoration:none;">
+            <div class="mono text-xs mb-2" style="color:var(--t3)">&larr; PREVIOUS</div>
+            <div class="text-sm" style="color:var(--t1)">{{ page.previous.title }}</div>
+          </a>
+        {% else %}
+          <div class="flex-1"></div>
+        {% endif %}
+
+        {% if page.next.url %}
+          <a class="glass rounded-xl p-5 flex-1 block text-right" href="{{ page.next.url }}" style="text-decoration:none;">
+            <div class="mono text-xs mb-2" style="color:var(--t3)">NEXT &rarr;</div>
+            <div class="text-sm" style="color:var(--t1)">{{ page.next.title }}</div>
+          </a>
+        {% else %}
+          <div class="flex-1"></div>
+        {% endif %}
+      </nav>
+    </article>
+
+    <aside class="hidden lg:block">
+      <div class="sticky top-24">
+        <div class="section-tag mb-6">// RECENT</div>
+        <div class="space-y-4">
+          {% for recent in site.posts limit: 5 %}
+            {% if recent.url != page.url %}
+              <a href="{{ recent.url }}" class="block glass rounded-xl p-4" style="text-decoration:none">
+                {% if recent.tags.first %}
+                  <div class="mono text-xs mb-2" style="color:var(--t3)">{{ recent.tags.first | upcase }}</div>
+                {% endif %}
+                <div class="text-sm" style="color:var(--t1)">{{ recent.title }}</div>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="greek-key my-8"></div>
+
+        <div class="section-tag mb-4">// NAVIGATE</div>
+        <div class="space-y-2">
+          <a href="{{ site.baseurl }}/posts/" class="block text-sm hover:text-white transition-colors" style="color:var(--t2);text-decoration:none;">All Articles</a>
+          <a href="{{ site.baseurl }}/about/" class="block text-sm hover:text-white transition-colors" style="color:var(--t2);text-decoration:none;">About</a>
+          <a href="{{ site.baseurl }}/feed.xml" class="block text-sm hover:text-white transition-colors" style="color:var(--t2);text-decoration:none;">RSS Feed</a>
+        </div>
+      </div>
+    </aside>
 
   </div>
-
-</article>
+</section>

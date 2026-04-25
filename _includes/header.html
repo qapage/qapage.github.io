@@ -1,19 +1,24 @@
-<header class="main-header">
-  <nav class="center-wrapper nav-main">
-    <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+<div class="top-strip fixed top-0 inset-x-0 z-[9999]" style="transform:translateZ(0)"></div>
 
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('.nav-main').classList.toggle('nav-open')">
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__bar"></span>
-    </button>
-
-    <div class="nav-links">
-      {% for my_page in site.pages %}
-        {% if my_page.active %}
-          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-        {% endif %}
-      {% endfor %}
+<nav class="nav fixed top-[1px] inset-x-0 z-[9998]">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="{{ site.baseurl }}/" class="flex items-center gap-3" style="text-decoration:none;">
+      <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="11" fill="none" stroke="#22c55e" stroke-width="0.4" opacity="0.18"/>
+        <line x1="24" y1="24" x2="10" y2="11" stroke="#4ade80" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <line x1="24" y1="24" x2="39" y2="14" stroke="#4ade80" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <line x1="24" y1="24" x2="38" y2="36" stroke="#4ade80" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <line x1="24" y1="24" x2="11" y2="37" stroke="#4ade80" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <circle cx="24" cy="24" r="4.4" fill="#0a1410" stroke="#4ade80" stroke-width="1.6"/>
+        <circle cx="24" cy="24" r="1.8" fill="#4ade80"/>
+      </svg>
+      <span style="width:1px;height:22px;background:rgba(34,197,94,0.2);display:inline-block;"></span>
+      <span class="font-display text-lg" style="font-weight:600;letter-spacing:-.04em;color:#e6f5ec;">{{ site.title | split: '.' | first }}<span style="color:#22c55e;">.com</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm mono" style="color:var(--t2);">
+      <a href="{{ site.baseurl }}/posts/" class="hover:text-white transition-colors" style="text-decoration:none;">/articles</a>
+      <a href="{{ site.baseurl }}/about/" class="hover:text-white transition-colors" style="text-decoration:none;">/about</a>
     </div>
-  </nav>
-</header>
+    <a href="{{ site.baseurl }}/posts/" class="btn-primary text-white text-sm px-5 py-2.5 rounded-md font-medium mono" style="text-decoration:none;">$ explore</a>
+  </div>
+</nav>

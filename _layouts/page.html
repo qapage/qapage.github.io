@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
-<article class="page">
-  {{ content }}
-</article>
+<section class="max-w-6xl mx-auto px-6 py-12">
+  <div class="max-w-3xl">
+    <div class="section-tag mb-6">// {{ page.title | upcase }}</div>
+    <div class="article-body">
+      {{ content }}
+    </div>
+  </div>
+</section>
