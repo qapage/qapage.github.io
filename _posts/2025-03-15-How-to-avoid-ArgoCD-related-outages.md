@@ -5,143 +5,140 @@ categories: [AWS, ArgoCD]
 tags: [architecture]
 ---
 
-#### Executive Summary: Avoiding ArgoCD-Related Outages
-GitOps tool ArgoCD offers powerful Kubernetes deployment automation but can introduce significant operational risks if not properly configured and managed. This document identifies five critical failure modes that commonly lead to production outages: manifest synchronization failures, resource pruning incidents, Git repository misconfiguration, RBAC access control issues, and resource health assessment failures. Additionally, complex interactions between ArgoCD and cluster autoscaling mechanisms present unique challenges that require careful planning.
+ArgoCD is one of the most widely adopted GitOps tools for Kubernetes deployments, and for good reason. It automates the process of keeping your clusters in sync with your Git repositories, and when it works well, it is invisible. But when it goes wrong, it can take down production in ways that are surprisingly hard to diagnose. I have seen enough ArgoCD-related incidents to know that the failure modes are predictable and preventable, if you know where to look.
 
-For each risk area, we provide concrete preventative measures focusing on progressive deployment strategies, proper validation procedures, and careful configuration management. By implementing these safeguards, DevOps teams can harness ArgoCD's capabilities while maintaining production stability and preventing widespread service disruptions. This guide serves as a critical resource for teams looking to adopt or improve their GitOps practices using ArgoCD in production environments.
+This post covers five critical failure modes that commonly lead to production outages: manifest synchronization failures, resource pruning incidents, Git repository misconfiguration, RBAC access control issues, and resource health assessment failures. It also covers the complex interactions between ArgoCD and cluster autoscaling, which deserve their own section.
 
-#### What is ArgoCD?
-ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes. It helps DevOps teams automate and manage the deployment of applications to Kubernetes clusters. 
-ArgoCD ensures that the actual state of your deployed applications in Kubernetes clusters matches the desired state defined in Git repositories It continuously monitors both the Git repo and the cluster, automatically synchronizing them when differences are detected
+#### What Is ArgoCD?
 
-#### Key Concepts in ArgoCD
-- **Application:** A group of Kubernetes resources as defined by a manifest. This is a Custom Resource Definition (CRD).
-- **Application:** source type Which Tool is used to build the application.
-- **Target state:** The desired state of an application, as represented by files in a Git repository.
-- **Live state:** The live state of that application. What pods etc are deployed.
-- **Sync status:** Whether or not the live state matches the target state. Is the deployed application the same as Git says it should be?
-- **Sync:** The process of making an application move to its target state. E.g. by applying changes to a Kubernetes cluster.
-- **Sync operation status:** Whether or not a sync succeeded.
-- **Refresh:** Compare the latest code in Git with the live state. Figure out what is different.
-- **Health:** The health of the application, is it running correctly? Can it serve requests?
-- **Tool:** A tool to create manifests from a directory of files. E.g. Kustomize. See Application Source Type.
-- **Configuration management tool:** See Tool.
-- **Configuration management plugin:** A custom tool.
-- **Finalizer:** a Kubernetes resource annotation that prevents the deletion of resources until certain conditions are met or specific cleanup operations are completed. Finalizers are an important mechanism in ArgoCD's resource management and play a crucial role in maintaining system integrity.
+ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes. It helps DevOps teams automate and manage the deployment of applications to Kubernetes clusters. ArgoCD ensures that the actual state of your deployed applications matches the desired state defined in Git repositories. It continuously monitors both the Git repo and the cluster, automatically synchronizing them when differences are detected.
 
-#### How Does ArgoCD Work?
-Argo CD follows the GitOps pattern of using Git repositories as the source of truth for defining the desired application state. Kubernetes manifests can be specified in several ways:
+Kubernetes manifests can be specified in several ways:
 
 - Kustomize applications
 - Helm charts
 - Jsonnet files
-- Plain directory of YAML/json manifests
+- Plain directory of YAML/JSON manifests
 - Any custom config management tool configured as a config management plugin
 
-Argo CD automates the deployment of the desired application states in the specified target environments. Application deployments can track updates to branches, tags, or be pinned to a specific version of manifests at a Git commit.
+ArgoCD automates the deployment of the desired application states in the specified target environments. Application deployments can track updates to branches, tags, or be pinned to a specific version of manifests at a Git commit.
 
-#### Finalizers and the Role They Play in ArgoCD
-Here's how finalizers work in ArgoCD:
+#### Key Concepts
 
-- **Resource Protection:** When ArgoCD manages resources, it adds finalizers to prevent resources from being deleted before ArgoCD can properly handle the deletion process.
-- **Cascade Deletion:** The resources-finalizer.argocd.argoproj.io/background finalizer ensures proper cascading deletion of resources. When you delete an Application in ArgoCD, this finalizer ensures that all child resources are properly cleaned up before the parent Application is removed.
-- **Orphaned Resource Management:** Finalizers help ArgoCD track and manage orphaned resources (resources that were created by ArgoCD but are no longer defined in Git).
-- **Deletion Hooks:** ArgoCD uses finalizers to ensure that any pre-deletion hooks or cleanup operations are completed before a resource is permanently removed.
-- **Synchronization Safety:** They prevent race conditions where resources might be deleted while ArgoCD is still performing operations on them.
+- **Application**: A group of Kubernetes resources as defined by a manifest. This is a Custom Resource Definition (CRD).
+- **Application source type**: The tool used to build the application (e.g., Kustomize, Helm).
+- **Target state**: The desired state of an application, as represented by files in a Git repository.
+- **Live state**: The actual running state of that application. What pods and resources are deployed.
+- **Sync status**: Whether the live state matches the target state. Is the deployed application the same as what Git says it should be?
+- **Sync**: The process of making an application move to its target state, e.g., by applying changes to a Kubernetes cluster.
+- **Sync operation status**: Whether a sync succeeded.
+- **Refresh**: Compare the latest code in Git with the live state. Figure out what is different.
+- **Health**: The health of the application. Is it running correctly? Can it serve requests?
+- **Tool**: A tool to create manifests from a directory of files, e.g., Kustomize. See Application source type.
+- **Configuration management plugin**: A custom tool for generating manifests.
+- **Finalizer**: A Kubernetes resource annotation that prevents the deletion of resources until certain conditions are met or specific cleanup operations are completed. Finalizers are an important mechanism in ArgoCD's resource management and play a crucial role in maintaining system integrity.
 
-If you ever encounter situations where resources seem "stuck" in a terminating state, it's often because a finalizer is still present and ArgoCD is either waiting for conditions to be met or experiencing an issue with the deletion process. In such cases, you might need to manually remove the finalizer, though this should be done cautiously as it bypasses ArgoCD's normal cleanup processes.
+#### Finalizers and the Role They Play
 
-#### What Are Some Ways in Which ArgoCD Can Cause Outages?
+Finalizers control how ArgoCD handles resource lifecycle events. Here is how they work:
 
-Here are 5 ways production outages can unintentionally occur through ArgoCD:
+- **Resource Protection**: When ArgoCD manages resources, it adds finalizers to prevent resources from being deleted before ArgoCD can properly handle the deletion process.
+- **Cascade Deletion**: The `resources-finalizer.argocd.argoproj.io/background` finalizer ensures proper cascading deletion of resources. When you delete an Application in ArgoCD, this finalizer ensures that all child resources are properly cleaned up before the parent Application is removed.
+- **Orphaned Resource Management**: Finalizers help ArgoCD track and manage orphaned resources (resources that were created by ArgoCD but are no longer defined in Git).
+- **Deletion Hooks**: ArgoCD uses finalizers to ensure that any pre-deletion hooks or cleanup operations are completed before a resource is permanently removed.
+- **Synchronization Safety**: They prevent race conditions where resources might be deleted while ArgoCD is still performing operations on them.
 
-1. **Manifest Synchronization Failures**
-Setting too aggressive sync policies without proper validation can propagate breaking changes to production. For example, if ArgoCD automatically applies manifests with incorrect resource specifications or incompatible API versions, critical workloads can fail immediately across environments.
+If you encounter resources stuck in a terminating state, it is often because a finalizer is still present and ArgoCD is either waiting for conditions to be met or experiencing an issue with the deletion process. In such cases, you may need to manually remove the finalizer, though this should be done cautiously as it bypasses ArgoCD's normal cleanup processes.
 
-    Preventative Measures:
+#### Five Ways ArgoCD Can Cause Outages
 
-    - Implement Progressive Sync Strategy: Use non-automatic sync for production environments and automatic sync only for development/staging.
-    - Add Pre-Sync Validation: Implement pre-sync hooks that run validation tools like kubeval, conftest, or kube-score.
-    - Establish Resource Requirements: Make CPU/memory/storage requests and limits mandatory in your CI pipeline.
-    - Version your CRDs: Always ensure CRD versions are explicitly declared and compatible with your cluster version.
+These are the failure modes I see most often. Each one is preventable with the right configuration and process.
 
-2. **Resource Pruning Incidents**
-ArgoCD's automated pruning feature can inadvertently remove resources not defined in Git but required in production. If orphaned but necessary resources (like manually created secrets or ConfigMaps) aren't properly excluded from pruning, they may be deleted during sync operations, causing dependent applications to fail.
+**1. Manifest Synchronization Failures**
 
-    Preventative Measures:
+Setting overly aggressive sync policies without proper validation can propagate breaking changes to production. If ArgoCD automatically applies manifests with incorrect resource specifications or incompatible API versions, critical workloads can fail immediately across environments. The temptation is to turn on automatic sync everywhere because it feels like the whole point of GitOps, but production environments need a more careful approach.
 
-    - Selectively Apply Auto-Pruning: Disable auto-pruning for critical namespaces or set exclusions.
-    - Mark Critical Resources: Use the argocd.argoproj.io/sync-options: Prune=false annotation for resources that should never be pruned.
-    - Stage Pruning Operations: Implement a staged approach where pruning happens first in lower environments.
-    - Regular Drift Detection: Schedule regular audits to detect resources managed outside of ArgoCD.
+Preventative measures:
 
-3. **Git Repository Misconfiguration**
-Pointing ArgoCD to the wrong branch or commit can deploy untested configurations. If someone accidentally merges code to the production-tracked branch without proper review, or if ArgoCD is configured to track an unstable branch, unvetted changes can immediately affect production systems.
+- Implement a progressive sync strategy. Use non-automatic sync for production environments and automatic sync only for development and staging.
+- Add pre-sync validation. Implement pre-sync hooks that run validation tools like kubeval, conftest, or kube-score.
+- Establish resource requirements. Make CPU, memory, and storage requests and limits mandatory in your CI pipeline.
+- Version your CRDs. Always ensure CRD versions are explicitly declared and compatible with your cluster version.
 
-    Preventative Measures:
+**2. Resource Pruning Incidents**
 
-    - Branch Protection Rules: Configure protected branches in GitHub/GitLab with required reviews.
-    - Use Target Revision Pinning: Pin production applications to specific commits or tags rather than branches.
-    - Implement Deployment Environments: Configure separate ArgoCD applications for different environments with appropriate source references.
-    - GitOps Pull Request Workflow: Require changes to go through PRs that update the target revision for production applications.
+ArgoCD's automated pruning feature can inadvertently remove resources that are not defined in Git but are required in production. If orphaned but necessary resources (like manually created secrets or ConfigMaps) are not properly excluded from pruning, they will be deleted during sync operations, causing dependent applications to fail. This is one of the more painful failure modes because the cause is not immediately obvious: the resource simply disappears.
 
-4. **RBAC and Access Control Issues**
-Insufficient role-based access controls within ArgoCD can allow unauthorized changes to production applications. If too many team members have sync privileges or application management rights without proper guardrails, accidental deployments or configuration changes can occur.
+Preventative measures:
 
-    Preventative Measures:
+- Selectively apply auto-pruning. Disable auto-pruning for critical namespaces or set exclusions.
+- Mark critical resources. Use the `argocd.argoproj.io/sync-options: Prune=false` annotation for resources that should never be pruned.
+- Stage pruning operations. Implement a staged approach where pruning happens first in lower environments.
+- Run regular drift detection. Schedule regular audits to detect resources managed outside of ArgoCD.
 
-    - Apply Principle of Least Privilege: Create role-specific projects in ArgoCD with appropriate permissions.
-    - Implement Approval Workflows: Require approval from designated approvers for production syncs.
-    - SSO Integration: Integrate with your organization's SSO for consistent access management.
-    - Restrict Self-Service: Limit which users can create/modify Applications and which clusters they can target.
+**3. Git Repository Misconfiguration**
 
-5. **Resource Health Assessment Failures**
-ArgoCD may incorrectly assess application health due to misconfigured health checks or incomplete resource definitions. This can lead to scenarios where ArgoCD reports applications as healthy despite actual failures, or conversely, repeatedly attempts to "fix" properly functioning systems, causing disruption and instability.
+Pointing ArgoCD to the wrong branch or commit can deploy untested configurations. If someone accidentally merges code to the production-tracked branch without proper review, or if ArgoCD is configured to track an unstable branch, unvetted changes can immediately affect production systems. This is a human error problem as much as a technical one.
 
-    Preventative Measures:
+Preventative measures:
 
-    - Custom Health Checks: Implement application-specific health checks beyond the default ArgoCD checks.
-    - Resource Quality Gates: Define minimum health criteria before considering deployments successful.
-    - Health Check Timeouts: Configure appropriate timeouts for health assessments based on application startup times.
-    - Canary Deployments: Use progressive delivery tools like Argo Rollouts for gradual rollouts with health gates.
+- Configure branch protection rules. Set up protected branches in GitHub or GitLab with required reviews.
+- Use target revision pinning. Pin production applications to specific commits or tags rather than branches.
+- Implement deployment environments. Configure separate ArgoCD applications for different environments with appropriate source references.
+- Require a GitOps pull request workflow. Changes should go through PRs that update the target revision for production applications.
 
-Each of these scenarios highlights the importance of implementing proper safeguards, review processes, and progressive deployment strategies when using GitOps tools like ArgoCD.
+**4. RBAC and Access Control Issues**
+
+Insufficient role-based access controls within ArgoCD can allow unauthorized changes to production applications. If too many team members have sync privileges or application management rights without proper guardrails, accidental deployments or configuration changes can occur. The blast radius of a misconfigured RBAC policy is large because it affects every application that person can touch.
+
+Preventative measures:
+
+- Apply the principle of least privilege. Create role-specific projects in ArgoCD with appropriate permissions.
+- Implement approval workflows. Require approval from designated approvers for production syncs.
+- Integrate SSO. Connect ArgoCD with your organization's SSO for consistent access management.
+- Restrict self-service. Limit which users can create or modify Applications and which clusters they can target.
+
+**5. Resource Health Assessment Failures**
+
+ArgoCD may incorrectly assess application health due to misconfigured health checks or incomplete resource definitions. This can lead to scenarios where ArgoCD reports applications as healthy despite actual failures, or where it repeatedly attempts to "fix" properly functioning systems, causing disruption and instability. False positives and false negatives are both dangerous here.
+
+Preventative measures:
+
+- Implement custom health checks. Build application-specific health checks beyond the default ArgoCD checks.
+- Define resource quality gates. Set minimum health criteria before considering deployments successful.
+- Configure health check timeouts. Set appropriate timeouts for health assessments based on application startup times.
+- Use canary deployments. Integrate progressive delivery tools like Argo Rollouts for gradual rollouts with health gates.
 
 #### ArgoCD and Autoscaling
-Another area worth noting is the interaction of ArgoCD and Autoscaling mechanisms. Cluster autoscaling mechanisms (both node and pod autoscaling) can create complex interactions with ArgoCD deployments that aren't immediately obvious. These interactions can lead to outages if not properly managed. 
 
-Here's a comprehensive look at how ArgoCD interfaces with cluster autoscaling and how to prevent related outages:
+The interaction between ArgoCD and cluster autoscaling mechanisms deserves special attention. Both node autoscaling and pod autoscaling can create complex interactions with ArgoCD deployments that are not immediately obvious. These interactions can lead to outages if not properly managed.
 
-1. Resource Pressure During Deployments
-When ArgoCD deploys applications with substantial resource requirements to a cluster with autoscaling enabled, the cluster may attempt to scale up nodes to accommodate the new workloads. During this scaling period, pods may remain in Pending state, causing ArgoCD to potentially mark applications as degraded, timeout during health checks, or even trigger unnecessary rollbacks.
+**Resource Pressure During Deployments**
 
-    Preventative Measures:
+When ArgoCD deploys applications with substantial resource requirements to a cluster with autoscaling enabled, the cluster may attempt to scale up nodes to accommodate the new workloads. During this scaling period, pods may remain in a Pending state, causing ArgoCD to mark applications as degraded, timeout during health checks, or trigger unnecessary rollbacks.
 
-    - Resource Requests and Limits: Always define resource requests and limits for all applications to ensure the autoscaler can make informed decisions.
-    - Pre-Deployment Capacity Checks: Use pre-deployment hooks to check cluster capacity before deploying large applications.
-    - Staggered Deployments: Implement staggered deployments to avoid overwhelming the cluster during peak load times.
+Preventative measures:
 
-2. Autoscaler Interference with ArgoCD Sync
-Horizontal Pod Autoscaler (HPA) or Vertical Pod Autoscaler (VPA) can change resource allocations or replica counts during or after ArgoCD sync operations, causing:
+- Define resource requests and limits for all applications so the autoscaler can make informed decisions.
+- Use pre-deployment hooks to check cluster capacity before deploying large applications.
+- Implement staggered deployments to avoid overwhelming the cluster during peak load times.
 
-    - Differences between desired state (in Git) and live state
-    - Continuous reconciliation loops as autoscalers and ArgoCD compete
-    - Health assessment failures as pod counts fluctuate
+**Autoscaler Interference with Sync Operations**
 
-    Preventative Measures:
-    - Disable Autoscaling During Deployments: Temporarily disable autoscaling during critical deployments.
-    - Use ArgoCD Sync Waves: Implement sync waves to control the order of resource deployment and ensure that autoscalers are not triggered prematurely.
-    - Monitor Autoscaler Events: Set up alerts for autoscaler events to quickly identify and resolve conflicts.
+Horizontal Pod Autoscaler (HPA) or Vertical Pod Autoscaler (VPA) can change resource allocations or replica counts during or after ArgoCD sync operations. This causes differences between the desired state in Git and the live state, continuous reconciliation loops as the autoscaler and ArgoCD compete with each other, and health assessment failures as pod counts fluctuate.
 
-3. Autoscaling and Resource Limits
-When cluster autoscaling is enabled, ResourceQuotas may create conflicts with ArgoCD deployments by:
+Preventative measures:
 
-    - Blocking new pods while nodes are scaling up
-    - Creating race conditions between quota enforcement and autoscaling
-    - Causing inconsistent deployment states that ArgoCD tries to reconcile
+- Temporarily disable autoscaling during critical deployments.
+- Use ArgoCD sync waves to control the order of resource deployment and ensure that autoscalers are not triggered prematurely.
+- Set up alerts for autoscaler events to quickly identify and resolve conflicts.
 
-    Preventative Measures:
-    - Define ResourceQuotas: Clearly define ResourceQuotas for namespaces to avoid conflicts with autoscaling.
-    - Monitor Quota Usage: Regularly monitor resource quota usage to ensure that autoscaling can function effectively.
-    - Use Namespace Isolation: Isolate critical applications in separate namespaces to minimize the impact of resource quotas.
+**Autoscaling and Resource Quotas**
 
+When cluster autoscaling is enabled, ResourceQuotas can create conflicts with ArgoCD deployments by blocking new pods while nodes are scaling up, creating race conditions between quota enforcement and autoscaling, and causing inconsistent deployment states that ArgoCD tries to reconcile.
+
+Preventative measures:
+
+- Define ResourceQuotas clearly for namespaces to avoid conflicts with autoscaling.
+- Monitor resource quota usage regularly to ensure that autoscaling can function effectively.
+- Isolate critical applications in separate namespaces to minimize the impact of resource quota contention.
