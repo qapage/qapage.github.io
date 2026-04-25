@@ -136,7 +136,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;
 .newsletter-input::placeholder{color:rgba(74,222,128,.25)}
 
 /* article body extras for Jekyll markdown */
-.article-body h4{font-family:'Bricolage Grotesque','Inter',sans-serif;font-weight:500;font-size:18px;letter-spacing:-0.01em;margin:1.8em 0 0.5em;color:rgba(220,255,220,0.8)}
+.article-body h4{font-family:'Bricolage Grotesque','Inter',sans-serif;font-weight:600;font-size:22px;letter-spacing:-0.02em;margin:2.2em 0 0.7em;padding-left:16px;border-left:3px solid var(--green);color:rgba(220,255,220,0.95)}
 .article-body ol{list-style:decimal;padding-left:1.2em;margin:1.5em 0}
 .article-body ol li{margin-bottom:0.6em;color:var(--t1)}
 .article-body img{max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border);margin:1.5em 0}
