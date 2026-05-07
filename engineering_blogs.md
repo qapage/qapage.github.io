@@ -29,6 +29,7 @@ subtitle: Curated engineering blogs from top tech companies
 
 #### Big Tech & Platform
 
+ * [Amazon Architecture Blog](https://aws.amazon.com/blogs/architecture/)
  * [Google AI Blog](https://ai.googleblog.com/)
  * [Google Developers](https://developers.googleblog.com/)
  * [YouTube Engineering](https://youtube-eng.googleblog.com/)
@@ -58,7 +59,6 @@ subtitle: Curated engineering blogs from top tech companies
  * [Engine Yard](https://blog.engineyard.com/)
  * [Fastmail](https://blog.fastmail.com/)
  * [Auth0](https://auth0.com/blog/)
- * [Stormpath](https://stormpath.com/blog/)
  * [Algolia](https://blog.algolia.com/)
  * [Postmark](https://postmarkapp.com/blog)
  * [Airbrake](https://airbrake.io/blog/)
@@ -79,7 +79,7 @@ subtitle: Curated engineering blogs from top tech companies
 #### Fintech & Payments
 
  * [Stripe Engineering](https://stripe.com/blog/engineering)
- * [PayPal Engineering](https://www.paypal-engineering.com/)
+ * [PayPal Engineering](https://medium.com/paypal-tech/all?topic=engineering)
  * [Robinhood Engineering](https://robinhood.engineering/)
  * [Venmo Engineering](http://blog.venmo.com/?category=Engineering)
  * [Two Sigma Technology](https://www.twosigma.com/insights/category/technology)
@@ -155,7 +155,6 @@ subtitle: Curated engineering blogs from top tech companies
 
  * [ThoughtWorks Insights](https://www.thoughtworks.com/insights/blog)
  * [8th Light](https://8thlight.com/blog/)
- * [Carbon Five](http://blog.carbonfive.com/)
  * [Codeminer42](https://blog.codeminer42.com/)
  * [Levvel](https://www.levvel.io/blog/)
  * [Diff Blog](https://diff.blog/)
@@ -175,7 +174,6 @@ subtitle: Curated engineering blogs from top tech companies
  * [RightScale](http://eng.rightscale.com/)
  * [Monsanto Engineering](http://engineering.monsanto.com/)
  * [FiftyThree (Making)](http://making.fiftythree.com/)
- * [Bitly (Word)](http://word.bitly.com/)
  * [Simulmedia Engineering](http://www.simulmedia.com/resources/blog/categories/engineering/)
  * [Advanced Web Hu](https://advancedweb.hu/)
  * [Mandrill](http://blog.mandrill.com/)
