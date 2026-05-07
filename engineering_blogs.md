@@ -41,7 +41,6 @@ subtitle: Curated engineering blogs from top tech companies
  * [LinkedIn Engineering](https://engineering.linkedin.com/blog.rss.html)
  * [Uber Engineering](https://eng.uber.com/)
  * [Pinterest Engineering](https://engineering.pinterest.com/)
- * [Yahoo Engineering](https://yahooeng.tumblr.com/)
  * [Mozilla](https://blog.mozilla.org/)
 
 #### Infrastructure & DevTools
