@@ -38,7 +38,7 @@ subtitle: Curated engineering blogs from top tech companies
  * [GitHub Blog](https://github.blog/)
  * [GitHub Engineering](https://githubengineering.com/)
  * [LinkedIn Engineering](https://engineering.linkedin.com/blog.rss.html)
- * [Uber Engineering](https://eng.uber.com/)
+ * [Uber Engineering](https://www.uber.com/us/en/blog/engineering/)
  * [Pinterest Engineering](https://medium.com/pinterest-engineering)
  * [Mozilla](https://blog.mozilla.org/)
 
@@ -65,6 +65,7 @@ subtitle: Curated engineering blogs from top tech companies
 #### E-commerce & Marketplace
 
  * [Shopify Engineering](https://engineering.shopify.com/)
+ * [Twilio Engineering](https://www.twilio.com/en-us/blog/developers)
  * [eBay Tech Blog](http://www.ebaytechblog.com/)
  * [Etsy (Code as Craft)](https://codeascraft.com/)
  * [Walmart Labs](https://medium.com/walmartlabs)
