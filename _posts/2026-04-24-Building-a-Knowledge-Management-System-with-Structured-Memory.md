@@ -2,7 +2,7 @@
 layout: post
 title: "Building a Knowledge Management System with Structured Memory"
 categories: [Engineering]
-tags: [AI, management]
+tags: [ai, management]
 ---
 
 Operational knowledge about complex systems lives across dozens of chat threads, ticketing systems, wikis, and people's heads. When a question comes up ("Which customers were affected by recent incidents?"), answering it requires searching multiple systems and reconstructing context from scratch every time. The information exists, but it is scattered and unstructured, which means it might as well not exist when you need it fast.

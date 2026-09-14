@@ -2,7 +2,7 @@
 layout: post
 title: "Enterprise-Wide AI Enablement for Engineering Teams"
 categories: [Engineering]
-tags: [AI, strategy, Leadership]
+tags: [ai, strategy, leadership]
 ---
 
 Most engineering organizations have given their developers access to an AI coding assistant and called it AI enablement. Copilot in the IDE, maybe Claude Code for some teams, perhaps a chatbot for answering questions about internal documentation. That is table stakes. It is the equivalent of giving every engineer a laptop and calling it a digital transformation.

@@ -2,6 +2,7 @@
 layout: default
 title: Engineering Blogs
 subtitle: Curated engineering blogs from top tech companies
+summary: "A curated list of engineering blogs from technology companies, infrastructure teams, and software organizations."
 ---
 
 <style>

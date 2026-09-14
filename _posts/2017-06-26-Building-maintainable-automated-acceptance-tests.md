@@ -34,7 +34,7 @@ Here are some good practices,
 
 * Its better to write test code in the same language that the application code is written in. This way, when you want developers to pitch in and write test code on a regular basis, you are offering them a path of least resistance. If they need to learn a new language and 5 other tools to be able to write test code, you will notice that not much test code gets written.
 
-* Its better to seperate the specification of a test (the intent of a test) from how you actually do the test (the mechanics of the test). Pages may change, HTML elements may change but the purpose of your test probably will remain the same. Build Page Objects or use other patterns that help you remain DRY (Don't Repeat Yourself). The Pragramatic Programmers book says this - `Every piece of knowledge must have a single, unambigious, authoritative representation within a system.`
+* It's better to separate the specification of a test (the intent of a test) from how you actually do the test (the mechanics of the test). Pages may change, HTML elements may change but the purpose of your test probably will remain the same. Build Page Objects or use other patterns that help you remain DRY (Don't Repeat Yourself). The Pragmatic Programmer book says this - `Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.`
 
 * Also make sure the re-usable objects are easy to find (and use). If future developers cannot find re-usable objects easily, they will just rewrite them from scratch.
 

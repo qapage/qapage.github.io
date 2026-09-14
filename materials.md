@@ -2,6 +2,7 @@
 layout: page
 title: Recommended Materials
 subtitle: Super helpful books, blogs etc
+summary: "Recommended books and blogs about software testing, engineering, leadership, and management."
 ---
 
 ### Books

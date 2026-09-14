@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Lets talk about Non-Human Identities (NHIs)
+title: Let's Talk About Non-Human Identities (NHIs)
 categories: [NHI, Security]
-tags: [security, NHI]
+tags: [security, nhi]
 ---
 
 ## Introduction

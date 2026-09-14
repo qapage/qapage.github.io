@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to do different tasks on mysql
+title: How to Do Different Tasks in MySQL
 categories: [mysql]
 tags: [mysql]
 ---

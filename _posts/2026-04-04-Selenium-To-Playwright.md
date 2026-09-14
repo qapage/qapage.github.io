@@ -2,7 +2,7 @@
 layout: post
 title: Converting Selenium Tests to Playwright
 categories: [Testing]
-tags: [Selenium, Playwright, Test Automation]
+tags: [selenium, playwright, test-automation]
 ---
 
 ## Why move away from Selenium?

@@ -2,7 +2,7 @@
 layout: post
 title: Fundamentals of SRE
 categories: [SRE]
-tags: [SRE]
+tags: [sre]
 ---
 
 ## Go to the source

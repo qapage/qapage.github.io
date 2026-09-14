@@ -2,7 +2,7 @@
 layout: post
 title: "SRE Monitoring: A Complete Checklist"
 categories: [SRE]
-tags: [SRE, monitoring, observability]
+tags: [sre, monitoring, observability]
 ---
 
 Most monitoring setups grow organically. A team adds a dashboard here, an alert there, and over time the system accumulates gaps nobody notices until an outage reveals them. The Google SRE books offer a structured alternative: a layered approach to monitoring that starts with what users experience and works inward toward root causes.

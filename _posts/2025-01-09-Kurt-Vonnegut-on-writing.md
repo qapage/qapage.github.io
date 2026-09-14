@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kurt Vonnegut On Writing
+title: Kurt Vonnegut on Writing
 categories: [writing]
 tags: [writing]
 ---

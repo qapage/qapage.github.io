@@ -2,7 +2,7 @@
 layout: post
 title: Executive Communication
 categories: [Communication]
-tags: [Leadership]
+tags: [leadership]
 ---
 
 I received some feedback recently. Updates to execs need to be crisp, and to the point. If more detail is needed, that can be provided later.
@@ -37,4 +37,3 @@ I've started applying this framework to every update I write. Before I start typ
 #### References
 https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7
 https://lethain.com/pyramid-principle/
-

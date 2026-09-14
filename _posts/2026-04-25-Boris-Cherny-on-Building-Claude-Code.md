@@ -2,7 +2,7 @@
 layout: post
 title: "Boris Cherny on Building Claude Code"
 categories: [Engineering]
-tags: [AI, software-engineering, productivity]
+tags: [ai, software-engineering, productivity]
 ---
 
 Boris Cherney is the creator and engineering lead behind Claude Code at Anthropic. Before that, he spent seven years at Meta leading code quality across Instagram, Facebook, WhatsApp, and Messenger. In a recent conversation on the Pragmatic Engineer podcast, Boris shared how Claude Code went from a solo side project to one of the fastest-growing developer tools, how it writes roughly 80% of all code at Anthropic, and what his daily workflow looks like when shipping 20 to 30 pull requests a day with zero handwritten code.

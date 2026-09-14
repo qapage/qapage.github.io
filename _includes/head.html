@@ -3,20 +3,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
+  {% capture meta_title %}
     {% if page.crawlertitle %}
-      {{ page.crawlertitle | escape }}
+      {{ page.crawlertitle }}
     {% elsif page.title %}
-      {{ page.title | escape }}
+      {{ page.title }}
     {% else %}
-      {{ site.title | escape }}
+      {{ site.title }}
     {% endif %}
-  </title>
+  {% endcapture %}
+  {% capture meta_description %}
+    {% if page.summary %}
+      {{ page.summary }}
+    {% elsif page.excerpt %}
+      {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+    {% else %}
+      {{ site.description }}
+    {% endif %}
+  {% endcapture %}
 
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{{ meta_title | strip | escape }}</title>
+
+  <meta name="description" content="{{ meta_description | strip_html | strip_newlines | strip | escape }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={theme:{extend:{fontFamily:{display:['Bricolage Grotesque','Inter','system-ui','sans-serif'],myth:['Cormorant Garamond','Georgia','serif'],sans:['Inter','system-ui','sans-serif'],mono:['JetBrains Mono','monospace']}}}}</script>
@@ -26,24 +37,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
 
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.summary }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ meta_title | strip | escape }}">
+  <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | strip | escape }}">
   <meta property="og:site_name" content="{{ site.title }}">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.summary }}">
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:title" content="{{ meta_title | strip | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | strip | escape }}">
 
+  {% assign social_image = "/assets/images/bg.svg" %}
   {% if page.bg %}
-    <meta property="og:image" content="{{ site.url }}{{ site.images }}/{{ page.bg }}">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.images }}/{{ page.bg }}">
-  {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.images }}/bg.svg">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.images }}/bg.svg">
+    {% assign social_image = site.images | append: "/" | append: page.bg %}
   {% endif %}
+  <meta property="og:image" content="{{ social_image | absolute_url }}">
+  <meta name="twitter:image" content="{{ social_image | absolute_url }}">
 
   <link rel="icon" type="image/svg+xml" href="{{ "/assets/images/favicon.svg" | relative_url }}">
 </head>

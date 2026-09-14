@@ -2,7 +2,7 @@
 layout: post
 title: The Case for Simplicity
 categories: [SRE]
-tags: [SRE]
+tags: [sre]
 ---
 
 Simple is clean. Simple is functional. Simple is better.

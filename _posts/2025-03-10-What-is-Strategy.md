@@ -5,7 +5,7 @@ categories: [Strategy]
 tags: [strategy]
 ---
 
-Lets talk about strategy. Why is it important for engineers and engineering leaders to understand strategy? Because strategy is the bridge between the vision and the end state. It is the set of coordinated actions you need to take, to get to where you need to go. It's just like an engineering project. You decide where you need to be, by when and then you make a plan, and you execute the plan until you get there. Nothing very business-y about it. Us engineers can do this. 
+Let's talk about strategy. Why is it important for engineers and engineering leaders to understand strategy? Because strategy is the bridge between the vision and the end state. It is the set of coordinated actions you need to take, to get to where you need to go. It's just like an engineering project. You decide where you need to be, by when and then you make a plan, and you execute the plan until you get there. Nothing very business-y about it. Us engineers can do this.
 
 #### So, what is strategy?
 A strategy is a theory about how to achieve a sustainable competitive advantage through an integrated set of distinctive activities. A good strategy can provide a sustainable competitive advantage and lead to superior performance. And poor performance might be an indicator of the lack of competitive advantage and might need a shift in strategy. 

@@ -2,7 +2,7 @@
 layout: post
 title: "The Case for a Relationship-Driven Life"
 categories: [Leadership]
-tags: [strategy, Leadership]
+tags: [strategy, leadership]
 ---
 
 I started my MBA at the University of Michigan's Ross School of Business in 2019. One of the first classes I took was Organizational Behavior, and that is where I first learned about Heidi Roizen. Heidi is a partner at Threshold Ventures and the subject of a Harvard Business School case on building a business network that has been taught for over 20 years.

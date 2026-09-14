@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My top linux commands
+title: My Top Linux Commands
 categories: [linux]
 tags: [linux]
 ---

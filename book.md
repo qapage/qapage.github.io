@@ -2,6 +2,7 @@
 layout: page
 title: "Engineering Confidence"
 permalink: /book/
+summary: "Engineering Confidence is a book about qmail, software architecture, security, reliability, and how engineering teams earn trust."
 ---
 
 ## Lessons from qmail, the 1990s Mail Server with a Security Guarantee and a Cult Following
@@ -88,7 +89,7 @@ mail, Unix, and security context as it goes.
 
 #### Why I wrote it
 
-I wrote this book because qmail is worth remembering. Imagine the confidence needed to thrown open your source code to the whole world, and dare it to find a security hole. On top of it, the developer of qmail, D.J. Bernstein offered $500 to anyone who found a security hole in the latest version of qmail. That confidence is rarely seen in software today. That confidence was based on principles, it was based on structure. This structure is worth learning, worth considering when we make decisions about software today. 
+I wrote this book because qmail is worth remembering. Imagine the confidence needed to throw open your source code to the whole world, and dare it to find a security hole. On top of it, the developer of qmail, D.J. Bernstein offered $500 to anyone who found a security hole in the latest version of qmail. That confidence is rarely seen in software today. That confidence was based on principles, it was based on structure. This structure is worth learning, worth considering when we make decisions about software today.
 
 Modern engineering teams make claims all the time: this system is secure, reliable, simple, maintainable, zero trust, cloud native, production ready. qmail is a reminder that confidence has to be earned in the design.
 

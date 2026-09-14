@@ -13,7 +13,7 @@ description: >
   strategy, leadership, and the craft of writing.
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "en"
-url: "https://onsitereliability.com/" # the base hostname & protocol for your site
+url: "https://onsitereliability.com" # the base hostname & protocol for your site
 github_username:  qapage
 
 # Build settings
@@ -41,3 +41,21 @@ sass:
 
 
 images: '/assets/images'
+
+# Keep repository and workspace files out of the public site.
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - "*.txt"
+  - "*.py"
+  - "*.py.v1"
+  - "*.swp"
+  - "*.DS_Store"
+  - .claude
+  - .playwright-mcp
+  - sre-monitoring-guidelines.md
+  - operational-expectations.md
+  - leitner_method.md

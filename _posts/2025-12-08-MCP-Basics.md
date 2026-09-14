@@ -2,7 +2,7 @@
 layout: post
 title: The Basics of MCP
 categories: [AI, LLM, MCP]
-tags: [AI]
+tags: [ai]
 ---
 
 ## Introduction
@@ -207,4 +207,3 @@ Whether you're building AI applications or just using them, understanding MCP he
 - [MCP Specification](https://spec.modelcontextprotocol.io/)
 - [MCP GitHub Repository](https://github.com/modelcontextprotocol)
 - [Example MCP Servers](https://github.com/modelcontextprotocol/servers)
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Resiliency, A true competitive advantage
+title: "Building Resiliency: A True Competitive Advantage"
 categories: [resiliency]
 tags: [architecture]
 ---
@@ -71,4 +71,3 @@ Here are a few ways I think about resiliency in the technology domain,
 * disaster recovery: designing for DR and executing it regularly
 * architecture resiliency patterns: Failover strategies, Data loss prevention strategies, loosely coupled architectures, short release cycles and single responsibility architectures
 * failing gracefully: In today's technical environments there are so many moving parts, so many 99.9% SLAs but put them all in serial, what you experience is far less than 99.9% SLA overall. Ensure your services can continue to function if a few services are down.
-

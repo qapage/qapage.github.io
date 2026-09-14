@@ -2,7 +2,7 @@
 layout: post
 title: The Basics of LangChain
 categories: [AI, LLM, LangChain]
-tags: [AI]
+tags: [ai]
 ---
 
 ## Introduction

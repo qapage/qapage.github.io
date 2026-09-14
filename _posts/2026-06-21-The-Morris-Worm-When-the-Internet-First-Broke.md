@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Morris Worm: When the Internet First Broke"
-categories: [Security]
+categories: [security]
 tags: [security, incidents, internet-history]
 ---
 

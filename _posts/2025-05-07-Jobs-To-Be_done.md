@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Jobs to be done Framework
+title: The Jobs-to-be-Done Framework
 categories: [Strategy]
 tags: [strategy]
 ---
